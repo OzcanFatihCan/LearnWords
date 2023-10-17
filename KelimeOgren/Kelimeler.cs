@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace KelimeOgren
 {
-    public partial class KelimeAna : Form
+    public partial class Kelimeler : Form
     {
-        public KelimeAna()
+        public Kelimeler()
         {
             InitializeComponent();
         }

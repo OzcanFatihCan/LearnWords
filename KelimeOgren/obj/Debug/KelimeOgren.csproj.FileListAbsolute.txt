@@ -8,10 +8,12 @@ D:\Projeler\C#Projeler\GitProje\KelimeOgren\KelimeOgren\bin\Debug\DataAccessLaye
 D:\Projeler\C#Projeler\GitProje\KelimeOgren\KelimeOgren\bin\Debug\EntityLayer.pdb
 D:\Projeler\C#Projeler\GitProje\KelimeOgren\KelimeOgren\bin\Debug\LogicLayer.pdb
 D:\Projeler\C#Projeler\GitProje\KelimeOgren\KelimeOgren\obj\Debug\KelimeOgren.csproj.AssemblyReference.cache
-D:\Projeler\C#Projeler\GitProje\KelimeOgren\KelimeOgren\obj\Debug\KelimeOgren.KelimeAna.resources
 D:\Projeler\C#Projeler\GitProje\KelimeOgren\KelimeOgren\obj\Debug\KelimeOgren.Properties.Resources.resources
 D:\Projeler\C#Projeler\GitProje\KelimeOgren\KelimeOgren\obj\Debug\KelimeOgren.csproj.GenerateResource.cache
 D:\Projeler\C#Projeler\GitProje\KelimeOgren\KelimeOgren\obj\Debug\KelimeOgren.csproj.CoreCompileInputs.cache
 D:\Projeler\C#Projeler\GitProje\KelimeOgren\KelimeOgren\obj\Debug\KelimeOgren.csproj.CopyComplete
 D:\Projeler\C#Projeler\GitProje\KelimeOgren\KelimeOgren\obj\Debug\KelimeOgren.exe
 D:\Projeler\C#Projeler\GitProje\KelimeOgren\KelimeOgren\obj\Debug\KelimeOgren.pdb
+D:\Projeler\C#Projeler\GitProje\KelimeOgren\KelimeOgren\obj\Debug\KelimeOgren.Kelimeler.resources
+D:\Projeler\C#Projeler\GitProje\KelimeOgren\KelimeOgren\obj\Debug\KelimeOgren.Anasayfa.resources
+D:\Projeler\C#Projeler\GitProje\KelimeOgren\KelimeOgren\obj\Debug\KelimeOgren.MenuForm.resources

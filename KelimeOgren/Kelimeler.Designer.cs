@@ -1,6 +1,6 @@
 ﻿namespace KelimeOgren
 {
-    partial class KelimeAna
+    partial class Kelimeler
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KelimeAna));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Kelimeler));
             this.label1 = new System.Windows.Forms.Label();
             this.TxtEN = new System.Windows.Forms.TextBox();
             this.TxtTR = new System.Windows.Forms.TextBox();

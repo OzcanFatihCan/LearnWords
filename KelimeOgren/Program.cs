@@ -16,7 +16,7 @@ namespace KelimeOgren
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new KelimeAna());
+            Application.Run(new Anasayfa());
         }
     }
 }
