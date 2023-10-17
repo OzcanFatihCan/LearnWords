@@ -55,9 +55,10 @@ namespace KelimeOgren
             LblSüre.Text = sure.ToString();
             if (sure==0)
             {
+                timer1.Stop();
                 MessageBox.Show("Süre Doldu", "bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 sure = 90;
-                kelime = 0;
+                kelime = 0;               
             }
         }
     }
