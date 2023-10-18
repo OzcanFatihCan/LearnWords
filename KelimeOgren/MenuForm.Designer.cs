@@ -341,6 +341,7 @@
             this.BtnIs.TabIndex = 0;
             this.BtnIs.Text = "İş\r\nİngilizcesi";
             this.BtnIs.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.BtnIs.Click += new System.EventHandler(this.BtnIs_Click);
             // 
             // MenuForm
             // 
@@ -368,6 +369,7 @@
             this.Name = "MenuForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kelime Öğren";
+            this.Load += new System.EventHandler(this.MenuForm_Load);
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             this.panel5.ResumeLayout(false);

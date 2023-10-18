@@ -21,10 +21,10 @@ namespace KelimeOgren
         int sure = 90;
         int kelime = 0;
         string cevap;
-
-        void getir()
+        public int kategori;
+        void kelimegetir()
         {
-            List<EntityWord> Kelimeler = LogicWord.LLKelimeGetir();
+            List<EntityWord> Kelimeler = LogicWord.LLISKelime(kategori);
             foreach (var item in Kelimeler)
             {
                 TxtEN.Text = item.En;
@@ -33,7 +33,7 @@ namespace KelimeOgren
         }
         private void KelimeAna_Load(object sender, EventArgs e)
         {
-            getir();
+            kelimegetir();
             TxtTR.Focus();
             timer1.Start();
         }
@@ -44,7 +44,7 @@ namespace KelimeOgren
             {
                 kelime++;
                 LblKelime.Text = kelime.ToString();
-                getir();
+                kelimegetir();
                 TxtTR.Clear();
             }
         }

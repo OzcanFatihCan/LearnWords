@@ -11,9 +11,11 @@ namespace EntityLayer
         private int id;
         private string en;
         private string tr;
+        private int kategori;
 
         public int Id { get => id; set => id = value; }
         public string En { get => en; set => en = value; }
         public string Tr { get => tr; set => tr = value; }
+        public int Kategori { get => kategori; set => kategori = value; }
     }
 }

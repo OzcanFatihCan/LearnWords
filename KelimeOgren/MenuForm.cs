@@ -17,9 +17,23 @@ namespace KelimeOgren
             InitializeComponent();
         }
 
+        
         private void BtnKarisik_Click(object sender, EventArgs e)
         {
             Kelimeler frm = new Kelimeler();
+            frm.kategori = 8;
+            frm.Show();
+        }
+
+        private void MenuForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnIs_Click(object sender, EventArgs e)
+        {
+            Kelimeler frm = new Kelimeler();
+            frm.kategori = 1;
             frm.Show();
         }
     }

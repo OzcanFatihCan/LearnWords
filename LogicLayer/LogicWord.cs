@@ -10,9 +10,16 @@ namespace LogicLayer
 {
     public class LogicWord
     {
-        public static List<EntityWord> LLKelimeGetir()
+        public static List<EntityWord> LLISKelime(int sayi)
         {
-            return DALWord.KelimeGetir();
+            if (!string.IsNullOrEmpty(sayi.ToString()))
+            {
+                return DALWord.IsKelimeGetir(sayi);
+            }
+            else
+            {
+                return null;
+            }
         }
 
     }
