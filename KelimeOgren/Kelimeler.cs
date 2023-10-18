@@ -34,8 +34,7 @@ namespace KelimeOgren
         private void KelimeAna_Load(object sender, EventArgs e)
         {
             kelimegetir();
-            TxtTR.Focus();
-            timer1.Start();
+            TxtTR.Focus();           
         }
 
         private void TxtTR_TextChanged(object sender, EventArgs e)
@@ -60,6 +59,16 @@ namespace KelimeOgren
                 sure = 90;
                 kelime = 0;               
             }
+        }
+
+        private void BtnBaslat_Click(object sender, EventArgs e)
+        {
+            timer1.Start();
+        }
+
+        private void BtnPas_Click(object sender, EventArgs e)
+        {
+            kelimegetir();
         }
     }
 }

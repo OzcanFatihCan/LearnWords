@@ -21,6 +21,7 @@ namespace KelimeOgren
         {
             MenuForm frm= new MenuForm();
             frm.Show();
+            this.Hide();
         }
     }
 }

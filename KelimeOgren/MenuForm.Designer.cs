@@ -88,6 +88,7 @@
             this.BtnB1.Size = new System.Drawing.Size(143, 32);
             this.BtnB1.TabIndex = 1;
             this.BtnB1.Text = "B1 Seviye";
+            this.BtnB1.Click += new System.EventHandler(this.BtnB1_Click);
             // 
             // panel5
             // 
@@ -111,6 +112,7 @@
             this.BtnA2.TabIndex = 2;
             this.BtnA2.Text = "A2 Seviye";
             this.BtnA2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.BtnA2.Click += new System.EventHandler(this.BtnA2_Click);
             // 
             // panel10
             // 
@@ -134,6 +136,7 @@
             this.BtnAlisveris.TabIndex = 1;
             this.BtnAlisveris.Text = "Alışveriş\r\nKelimeleri";
             this.BtnAlisveris.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.BtnAlisveris.Click += new System.EventHandler(this.BtnAlisveris_Click);
             // 
             // panel6
             // 
@@ -157,6 +160,7 @@
             this.BtnCihaz.TabIndex = 1;
             this.BtnCihaz.Text = "Evde\r\nKullanılan\r\nCihazlar";
             this.BtnCihaz.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.BtnCihaz.Click += new System.EventHandler(this.BtnCihaz_Click);
             // 
             // panel11
             // 
@@ -203,6 +207,7 @@
             this.BtnSifat.TabIndex = 1;
             this.BtnSifat.Text = "En Sık\r\nKullanılan\r\nSıfatlar\r\n";
             this.BtnSifat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.BtnSifat.Click += new System.EventHandler(this.BtnSifat_Click);
             // 
             // panel12
             // 
@@ -226,6 +231,7 @@
             this.BtnKafe.TabIndex = 1;
             this.BtnKafe.Text = "Sohbet, Kafe\r\nve\r\nRestoran";
             this.BtnKafe.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.BtnKafe.Click += new System.EventHandler(this.BtnKafe_Click);
             // 
             // panel8
             // 
@@ -249,6 +255,7 @@
             this.BtnFiil.TabIndex = 1;
             this.BtnFiil.Text = "En Sık\r\nKullanılan\r\nFiller\r\n";
             this.BtnFiil.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.BtnFiil.Click += new System.EventHandler(this.BtnFiil_Click);
             // 
             // panel4
             // 
@@ -272,6 +279,7 @@
             this.BtnA1.TabIndex = 1;
             this.BtnA1.Text = "A1 Seviye";
             this.BtnA1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.BtnA1.Click += new System.EventHandler(this.BtnA1_Click);
             // 
             // panel3
             // 
@@ -295,6 +303,7 @@
             this.BtnGeziSeyehat.TabIndex = 1;
             this.BtnGeziSeyehat.Text = "Gezi\r\nve\r\nSeyehat";
             this.BtnGeziSeyehat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.BtnGeziSeyehat.Click += new System.EventHandler(this.BtnGeziSeyehat_Click);
             // 
             // panel2
             // 
@@ -318,6 +327,7 @@
             this.BtnHisDuygu.TabIndex = 1;
             this.BtnHisDuygu.Text = "Hisler\r\nve\r\nDuygular\r\n";
             this.BtnHisDuygu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.BtnHisDuygu.Click += new System.EventHandler(this.BtnHisDuygu_Click);
             // 
             // panel1
             // 

@@ -39,12 +39,20 @@
             this.LblKelime = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.BtnMenü = new System.Windows.Forms.Button();
+            this.BtnStat = new System.Windows.Forms.Button();
+            this.BtnPas = new System.Windows.Forms.Button();
+            this.BtnBaslat = new System.Windows.Forms.Button();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(31, 39);
+            this.label1.Location = new System.Drawing.Point(30, 32);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(78, 19);
             this.label1.TabIndex = 0;
@@ -52,23 +60,23 @@
             // 
             // TxtEN
             // 
-            this.TxtEN.Location = new System.Drawing.Point(116, 39);
+            this.TxtEN.Location = new System.Drawing.Point(115, 32);
             this.TxtEN.Name = "TxtEN";
-            this.TxtEN.Size = new System.Drawing.Size(177, 26);
+            this.TxtEN.Size = new System.Drawing.Size(232, 26);
             this.TxtEN.TabIndex = 2;
             // 
             // TxtTR
             // 
-            this.TxtTR.Location = new System.Drawing.Point(116, 83);
+            this.TxtTR.Location = new System.Drawing.Point(115, 76);
             this.TxtTR.Name = "TxtTR";
-            this.TxtTR.Size = new System.Drawing.Size(177, 26);
+            this.TxtTR.Size = new System.Drawing.Size(232, 26);
             this.TxtTR.TabIndex = 1;
             this.TxtTR.TextChanged += new System.EventHandler(this.TxtTR_TextChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(31, 83);
+            this.label2.Location = new System.Drawing.Point(30, 76);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 19);
             this.label2.TabIndex = 2;
@@ -77,7 +85,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(344, 39);
+            this.label3.Location = new System.Drawing.Point(397, 35);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(51, 19);
             this.label3.TabIndex = 4;
@@ -86,7 +94,7 @@
             // LblSüre
             // 
             this.LblSüre.AutoSize = true;
-            this.LblSüre.Location = new System.Drawing.Point(392, 39);
+            this.LblSüre.Location = new System.Drawing.Point(445, 35);
             this.LblSüre.Name = "LblSüre";
             this.LblSüre.Size = new System.Drawing.Size(27, 19);
             this.LblSüre.TabIndex = 5;
@@ -95,7 +103,7 @@
             // LblKelime
             // 
             this.LblKelime.AutoSize = true;
-            this.LblKelime.Location = new System.Drawing.Point(392, 83);
+            this.LblKelime.Location = new System.Drawing.Point(445, 79);
             this.LblKelime.Name = "LblKelime";
             this.LblKelime.Size = new System.Drawing.Size(18, 19);
             this.LblKelime.TabIndex = 7;
@@ -104,7 +112,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(328, 83);
+            this.label6.Location = new System.Drawing.Point(381, 79);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(67, 19);
             this.label6.TabIndex = 6;
@@ -115,30 +123,102 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // KelimeAna
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.BtnBaslat);
+            this.groupBox1.Controls.Add(this.BtnPas);
+            this.groupBox1.Controls.Add(this.TxtEN);
+            this.groupBox1.Controls.Add(this.LblKelime);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.LblSüre);
+            this.groupBox1.Controls.Add(this.TxtTR);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(483, 185);
+            this.groupBox1.TabIndex = 8;
+            this.groupBox1.TabStop = false;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.BtnStat);
+            this.groupBox2.Controls.Add(this.BtnMenü);
+            this.groupBox2.Location = new System.Drawing.Point(501, 12);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(171, 185);
+            this.groupBox2.TabIndex = 9;
+            this.groupBox2.TabStop = false;
+            // 
+            // BtnMenü
+            // 
+            this.BtnMenü.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnMenü.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMenü.Location = new System.Drawing.Point(6, 16);
+            this.BtnMenü.Name = "BtnMenü";
+            this.BtnMenü.Size = new System.Drawing.Size(159, 77);
+            this.BtnMenü.TabIndex = 0;
+            this.BtnMenü.Text = "MENÜ";
+            this.BtnMenü.UseVisualStyleBackColor = true;
+            // 
+            // BtnStat
+            // 
+            this.BtnStat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnStat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnStat.Location = new System.Drawing.Point(6, 99);
+            this.BtnStat.Name = "BtnStat";
+            this.BtnStat.Size = new System.Drawing.Size(159, 77);
+            this.BtnStat.TabIndex = 1;
+            this.BtnStat.Text = "İSTATİSTİKLER";
+            this.BtnStat.UseVisualStyleBackColor = true;
+            // 
+            // BtnPas
+            // 
+            this.BtnPas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnPas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnPas.Location = new System.Drawing.Point(103, 127);
+            this.BtnPas.Name = "BtnPas";
+            this.BtnPas.Size = new System.Drawing.Size(127, 49);
+            this.BtnPas.TabIndex = 8;
+            this.BtnPas.Text = "PAS";
+            this.BtnPas.UseVisualStyleBackColor = true;
+            this.BtnPas.Click += new System.EventHandler(this.BtnPas_Click);
+            // 
+            // BtnBaslat
+            // 
+            this.BtnBaslat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnBaslat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnBaslat.Location = new System.Drawing.Point(236, 127);
+            this.BtnBaslat.Name = "BtnBaslat";
+            this.BtnBaslat.Size = new System.Drawing.Size(127, 49);
+            this.BtnBaslat.TabIndex = 9;
+            this.BtnBaslat.Text = "BAŞLAT";
+            this.BtnBaslat.UseVisualStyleBackColor = true;
+            this.BtnBaslat.Click += new System.EventHandler(this.BtnBaslat_Click);
+            // 
+            // Kelimeler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(501, 151);
-            this.Controls.Add(this.LblKelime);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.LblSüre);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.TxtTR);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.TxtEN);
-            this.Controls.Add(this.label1);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(54)))), ((int)(((byte)(90)))));
+            this.ClientSize = new System.Drawing.Size(684, 211);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.ForeColor = System.Drawing.Color.White;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.MaximizeBox = false;
-            this.Name = "KelimeAna";
+            this.Name = "Kelimeler";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kelime Öğren";
             this.Load += new System.EventHandler(this.KelimeAna_Load);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -153,6 +233,12 @@
         private System.Windows.Forms.Label LblKelime;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button BtnBaslat;
+        private System.Windows.Forms.Button BtnPas;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button BtnStat;
+        private System.Windows.Forms.Button BtnMenü;
     }
 }
 
