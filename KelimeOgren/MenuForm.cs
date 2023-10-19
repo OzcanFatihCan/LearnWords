@@ -16,10 +16,16 @@ namespace KelimeOgren
         {
             InitializeComponent();
         }
-
+        public string kullanici;
         
-       
-
+        void Kelimeler(int sayi)
+        {
+            Kelimeler frm = new Kelimeler();
+            frm.kategori = sayi;
+            frm.kullaniciad = kullanici;
+            frm.Show();
+            this.Hide();            
+        }
         private void MenuForm_Load(object sender, EventArgs e)
         {
 
@@ -27,109 +33,63 @@ namespace KelimeOgren
 
         private void BtnIs_Click(object sender, EventArgs e)
         {
-            Kelimeler frm = new Kelimeler();
-            frm.kategori = 1;
-            frm.Show();
-            this.Hide();
+            Kelimeler(1);
         }
 
         private void BtnHisDuygu_Click(object sender, EventArgs e)
         {
-            Kelimeler frm = new Kelimeler();
-            frm.kategori = 2;
-            frm.Show();
-            this.Hide();
+            Kelimeler(2);
 
         }
 
         private void BtnGeziSeyehat_Click(object sender, EventArgs e)
         {
-            Kelimeler frm = new Kelimeler();
-            frm.kategori = 3;
-            frm.Show();
-            this.Hide();
-
+            Kelimeler(3);
         }
 
         private void BtnFiil_Click(object sender, EventArgs e)
         {
-            Kelimeler frm = new Kelimeler();
-            frm.kategori = 4;
-            frm.Show();
-            this.Hide();
-
+            Kelimeler(4);
         }
 
         private void BtnSifat_Click(object sender, EventArgs e)
         {
-            Kelimeler frm = new Kelimeler();
-            frm.kategori = 5;
-            frm.Show();
-            this.Hide();
-
+            Kelimeler(5);
         }
 
         private void BtnCihaz_Click(object sender, EventArgs e)
         {
-            Kelimeler frm = new Kelimeler();
-            frm.kategori = 6;
-            frm.Show();
-            this.Hide();
-
+            Kelimeler(6);
         }
 
         private void BtnKafe_Click(object sender, EventArgs e)
         {
-            Kelimeler frm = new Kelimeler();
-            frm.kategori = 7;
-            frm.Show();
-            this.Hide();
-
+            Kelimeler(7);
         }
 
         private void BtnKarisik_Click(object sender, EventArgs e)
         {
-            Kelimeler frm = new Kelimeler();
-            frm.kategori = 8;
-            frm.Show();
-            this.Hide();
-
+            Kelimeler(8);
         }
 
         private void BtnAlisveris_Click(object sender, EventArgs e)
         {
-            Kelimeler frm = new Kelimeler();
-            frm.kategori = 9;
-            frm.Show();
-            this.Hide();
-
+            Kelimeler(9);
         }
 
         private void BtnA1_Click(object sender, EventArgs e)
         {
-            Kelimeler frm = new Kelimeler();
-            frm.kategori = 10;
-            frm.Show();
-            this.Hide();
-
+            Kelimeler(10);
         }
 
         private void BtnA2_Click(object sender, EventArgs e)
         {
-            Kelimeler frm = new Kelimeler();
-            frm.kategori = 11;
-            frm.Show();
-            this.Hide();
-
+            Kelimeler(11);
         }
 
         private void BtnB1_Click(object sender, EventArgs e)
         {
-            Kelimeler frm = new Kelimeler();
-            frm.kategori = 12;
-            frm.Show();
-            this.Hide();
-
+            Kelimeler(12);
         }
     }
 }

@@ -22,6 +22,7 @@ namespace KelimeOgren
         int kelime = 0;
         string cevap;
         public int kategori;
+        public string kullaniciad;
         void kelimegetir()
         {
             List<EntityWord> Kelimeler = LogicWord.LLISKelime(kategori);

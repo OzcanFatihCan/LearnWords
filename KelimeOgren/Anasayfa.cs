@@ -1,4 +1,6 @@
-﻿using System;
+﻿using EntityLayer;
+using LogicLayer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,9 +21,24 @@ namespace KelimeOgren
 
         private void BtnBasla_Click(object sender, EventArgs e)
         {
-            MenuForm frm= new MenuForm();
-            frm.Show();
-            this.Hide();
+            EntityAccount ent=new EntityAccount();
+            ent.Ad = TxtAd.Text;
+            int result= LogicAccount.LLStatEkle(ent);
+            if (result > 0)
+            {
+                MenuForm frm = new MenuForm();
+                frm.kullanici = TxtAd.Text;
+                frm.Show();
+                this.Hide();
+            }
+            else if (result == 0)
+            {
+                MessageBox.Show("Lütfen isim giriniz", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                MessageBox.Show("Lütfen isim giriniz", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }           
         }
     }
 }

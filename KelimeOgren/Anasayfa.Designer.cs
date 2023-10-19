@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Anasayfa));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BtnBasla = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TxtAd = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -59,12 +59,12 @@
             this.BtnBasla.UseVisualStyleBackColor = true;
             this.BtnBasla.Click += new System.EventHandler(this.BtnBasla_Click);
             // 
-            // textBox1
+            // TxtAd
             // 
-            this.textBox1.Location = new System.Drawing.Point(314, 261);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(156, 26);
-            this.textBox1.TabIndex = 2;
+            this.TxtAd.Location = new System.Drawing.Point(314, 261);
+            this.TxtAd.Name = "TxtAd";
+            this.TxtAd.Size = new System.Drawing.Size(156, 26);
+            this.TxtAd.TabIndex = 2;
             // 
             // pictureBox2
             // 
@@ -84,7 +84,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(784, 461);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.TxtAd);
             this.Controls.Add(this.BtnBasla);
             this.Controls.Add(this.pictureBox1);
             this.DoubleBuffered = true;
@@ -106,7 +106,7 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button BtnBasla;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TxtAd;
         private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
