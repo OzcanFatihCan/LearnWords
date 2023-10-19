@@ -378,7 +378,7 @@
             this.MaximizeBox = false;
             this.Name = "MenuForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Kelime Öğren";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.MenuForm_Load);
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();

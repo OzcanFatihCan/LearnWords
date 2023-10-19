@@ -62,6 +62,7 @@
             // 
             // TxtEN
             // 
+            this.TxtEN.Enabled = false;
             this.TxtEN.Location = new System.Drawing.Point(115, 32);
             this.TxtEN.Name = "TxtEN";
             this.TxtEN.Size = new System.Drawing.Size(232, 26);
@@ -69,6 +70,7 @@
             // 
             // TxtTR
             // 
+            this.TxtTR.Enabled = false;
             this.TxtTR.Location = new System.Drawing.Point(115, 76);
             this.TxtTR.Name = "TxtTR";
             this.TxtTR.Size = new System.Drawing.Size(232, 26);
@@ -184,7 +186,7 @@
             this.BtnStat.Location = new System.Drawing.Point(6, 99);
             this.BtnStat.Name = "BtnStat";
             this.BtnStat.Size = new System.Drawing.Size(159, 77);
-            this.BtnStat.TabIndex = 1;
+            this.BtnStat.TabIndex = 6;
             this.BtnStat.Text = "İSTATİSTİKLER";
             this.BtnStat.UseVisualStyleBackColor = true;
             // 
@@ -195,12 +197,13 @@
             this.BtnMenü.Location = new System.Drawing.Point(6, 16);
             this.BtnMenü.Name = "BtnMenü";
             this.BtnMenü.Size = new System.Drawing.Size(159, 77);
-            this.BtnMenü.TabIndex = 0;
+            this.BtnMenü.TabIndex = 5;
             this.BtnMenü.Text = "MENÜ";
             this.BtnMenü.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(654, 4);
             this.pictureBox1.Name = "pictureBox1";

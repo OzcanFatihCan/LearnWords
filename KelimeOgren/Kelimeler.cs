@@ -23,13 +23,29 @@ namespace KelimeOgren
         string cevap;
         public int kategori;
         public string kullaniciad;
-        void kelimegetir()
+        void kelimegetir(int kategori)
         {
-            List<EntityWord> Kelimeler = LogicWord.LLISKelime(kategori);
-            foreach (var item in Kelimeler)
+            if (kategori==1)
             {
-                TxtEN.Text = item.En;
-                cevap = item.Tr;             
+                List<EntityWord> Kelimeler = LogicWord.LLISKelime(kategori);
+                foreach (var item in Kelimeler)
+                {
+                    TxtEN.Text = item.En;
+                    cevap = item.Tr;
+                }
+            }
+            if(kategori==2)
+            {
+                List<EntityWord> Kelimeler = LogicWord.LLEmoteFeelKelime(kategori);
+                foreach (var item in Kelimeler)
+                {
+                    TxtEN.Text = item.En;
+                    cevap = item.Tr;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Hazırlık aşamasındayız", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
         void stat(int dogru)
@@ -51,7 +67,7 @@ namespace KelimeOgren
             {
                 kelime++;
                 LblKelime.Text = kelime.ToString();
-                kelimegetir();
+                kelimegetir(kategori);
                 TxtTR.Clear();
             }
         }
@@ -65,6 +81,7 @@ namespace KelimeOgren
                 timer1.Stop();
                 BtnBaslat.Enabled = true;
                 BtnPas.Enabled = false;
+                TxtTR.Enabled = false;
                 MessageBox.Show("Süre Doldu", "bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 stat(kelime);
                 sure = 90;
@@ -77,12 +94,14 @@ namespace KelimeOgren
             timer1.Start();
             BtnBaslat.Enabled = false;
             BtnPas.Enabled = true;
-            kelimegetir();
+            TxtTR.Enabled = true;
+
+            kelimegetir(kategori);
         }
 
         private void BtnPas_Click(object sender, EventArgs e)
         {
-            kelimegetir();
+            kelimegetir(kategori);
         }
 
         private void pictureBox1_MouseHover(object sender, EventArgs e)

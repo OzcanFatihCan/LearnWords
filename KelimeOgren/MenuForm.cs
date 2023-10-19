@@ -39,7 +39,6 @@ namespace KelimeOgren
         private void BtnHisDuygu_Click(object sender, EventArgs e)
         {
             Kelimeler(2);
-
         }
 
         private void BtnGeziSeyehat_Click(object sender, EventArgs e)

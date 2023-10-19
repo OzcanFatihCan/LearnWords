@@ -22,5 +22,17 @@ namespace LogicLayer
             }
         }
 
+        public static List<EntityWord> LLEmoteFeelKelime(int sayi)
+        {
+            if (!string.IsNullOrEmpty(sayi.ToString()))
+            {
+                return DALWord.EmoteFeelKelimeGetir(sayi);
+            }
+            else
+            {
+                return null;
+            }
+        }
+
     }
 }
