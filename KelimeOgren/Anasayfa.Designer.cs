@@ -78,6 +78,7 @@
             // 
             // Anasayfa
             // 
+            this.AcceptButton = this.BtnBasla;
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;

@@ -40,13 +40,15 @@
             this.label6 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.BtnMenü = new System.Windows.Forms.Button();
-            this.BtnStat = new System.Windows.Forms.Button();
-            this.BtnPas = new System.Windows.Forms.Button();
             this.BtnBaslat = new System.Windows.Forms.Button();
+            this.BtnPas = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.BtnStat = new System.Windows.Forms.Button();
+            this.BtnMenü = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -135,55 +137,11 @@
             this.groupBox1.Controls.Add(this.LblSüre);
             this.groupBox1.Controls.Add(this.TxtTR);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(19, 43);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(483, 185);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.BtnStat);
-            this.groupBox2.Controls.Add(this.BtnMenü);
-            this.groupBox2.Location = new System.Drawing.Point(501, 12);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(171, 185);
-            this.groupBox2.TabIndex = 9;
-            this.groupBox2.TabStop = false;
-            // 
-            // BtnMenü
-            // 
-            this.BtnMenü.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnMenü.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnMenü.Location = new System.Drawing.Point(6, 16);
-            this.BtnMenü.Name = "BtnMenü";
-            this.BtnMenü.Size = new System.Drawing.Size(159, 77);
-            this.BtnMenü.TabIndex = 0;
-            this.BtnMenü.Text = "MENÜ";
-            this.BtnMenü.UseVisualStyleBackColor = true;
-            // 
-            // BtnStat
-            // 
-            this.BtnStat.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnStat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnStat.Location = new System.Drawing.Point(6, 99);
-            this.BtnStat.Name = "BtnStat";
-            this.BtnStat.Size = new System.Drawing.Size(159, 77);
-            this.BtnStat.TabIndex = 1;
-            this.BtnStat.Text = "İSTATİSTİKLER";
-            this.BtnStat.UseVisualStyleBackColor = true;
-            // 
-            // BtnPas
-            // 
-            this.BtnPas.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnPas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnPas.Location = new System.Drawing.Point(103, 127);
-            this.BtnPas.Name = "BtnPas";
-            this.BtnPas.Size = new System.Drawing.Size(127, 49);
-            this.BtnPas.TabIndex = 8;
-            this.BtnPas.Text = "PAS";
-            this.BtnPas.UseVisualStyleBackColor = true;
-            this.BtnPas.Click += new System.EventHandler(this.BtnPas_Click);
             // 
             // BtnBaslat
             // 
@@ -197,17 +155,76 @@
             this.BtnBaslat.UseVisualStyleBackColor = true;
             this.BtnBaslat.Click += new System.EventHandler(this.BtnBaslat_Click);
             // 
+            // BtnPas
+            // 
+            this.BtnPas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnPas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnPas.Location = new System.Drawing.Point(103, 127);
+            this.BtnPas.Name = "BtnPas";
+            this.BtnPas.Size = new System.Drawing.Size(127, 49);
+            this.BtnPas.TabIndex = 8;
+            this.BtnPas.Text = "PAS";
+            this.BtnPas.UseVisualStyleBackColor = true;
+            this.BtnPas.Click += new System.EventHandler(this.BtnPas_Click);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.BtnStat);
+            this.groupBox2.Controls.Add(this.BtnMenü);
+            this.groupBox2.Location = new System.Drawing.Point(508, 43);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(171, 185);
+            this.groupBox2.TabIndex = 9;
+            this.groupBox2.TabStop = false;
+            // 
+            // BtnStat
+            // 
+            this.BtnStat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnStat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnStat.Location = new System.Drawing.Point(6, 99);
+            this.BtnStat.Name = "BtnStat";
+            this.BtnStat.Size = new System.Drawing.Size(159, 77);
+            this.BtnStat.TabIndex = 1;
+            this.BtnStat.Text = "İSTATİSTİKLER";
+            this.BtnStat.UseVisualStyleBackColor = true;
+            // 
+            // BtnMenü
+            // 
+            this.BtnMenü.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnMenü.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMenü.Location = new System.Drawing.Point(6, 16);
+            this.BtnMenü.Name = "BtnMenü";
+            this.BtnMenü.Size = new System.Drawing.Size(159, 77);
+            this.BtnMenü.TabIndex = 0;
+            this.BtnMenü.Text = "MENÜ";
+            this.BtnMenü.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(654, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(43, 33);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox1.MouseLeave += new System.EventHandler(this.pictureBox1_MouseLeave);
+            this.pictureBox1.MouseHover += new System.EventHandler(this.pictureBox1_MouseHover);
+            // 
             // Kelimeler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(54)))), ((int)(((byte)(90)))));
-            this.ClientSize = new System.Drawing.Size(684, 211);
+            this.ClientSize = new System.Drawing.Size(700, 250);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.ForeColor = System.Drawing.Color.White;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.MaximizeBox = false;
@@ -215,9 +232,12 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kelime Öğren";
             this.Load += new System.EventHandler(this.KelimeAna_Load);
+            this.MouseLeave += new System.EventHandler(this.pictureBox1_MouseLeave);
+            this.MouseHover += new System.EventHandler(this.pictureBox1_MouseHover);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -239,6 +259,7 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button BtnStat;
         private System.Windows.Forms.Button BtnMenü;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

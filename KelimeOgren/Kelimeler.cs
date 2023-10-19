@@ -32,10 +32,17 @@ namespace KelimeOgren
                 cevap = item.Tr;             
             }
         }
-        private void KelimeAna_Load(object sender, EventArgs e)
+        void stat(int dogru)
         {
-            kelimegetir();
-            TxtTR.Focus();           
+            EntityAccount ent = new EntityAccount();
+            ent.Ad = kullaniciad;
+            ent.Kategori = kategori;
+            ent.Dogru = dogru;
+            LogicAccount.LLStatEkle(ent);
+        }
+        private void KelimeAna_Load(object sender, EventArgs e)
+        {              
+            BtnPas.Enabled=false;
         }
 
         private void TxtTR_TextChanged(object sender, EventArgs e)
@@ -56,7 +63,10 @@ namespace KelimeOgren
             if (sure==0)
             {
                 timer1.Stop();
+                BtnBaslat.Enabled = true;
+                BtnPas.Enabled = false;
                 MessageBox.Show("Süre Doldu", "bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                stat(kelime);
                 sure = 90;
                 kelime = 0;               
             }
@@ -65,11 +75,29 @@ namespace KelimeOgren
         private void BtnBaslat_Click(object sender, EventArgs e)
         {
             timer1.Start();
+            BtnBaslat.Enabled = false;
+            BtnPas.Enabled = true;
+            kelimegetir();
         }
 
         private void BtnPas_Click(object sender, EventArgs e)
         {
             kelimegetir();
+        }
+
+        private void pictureBox1_MouseHover(object sender, EventArgs e)
+        {
+            pictureBox1.BackColor = Color.Red;
+        }
+
+        private void pictureBox1_MouseLeave(object sender, EventArgs e)
+        {
+            pictureBox1.BackColor = Color.Transparent;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
