@@ -56,6 +56,16 @@ namespace KelimeOgren
                 }
                 return;
             }
+            if (kategori == 4)
+            {
+                List<EntityWord> Kelimeler = LogicWord.LLFiilKelime(kategori);
+                foreach (var item in Kelimeler)
+                {
+                    TxtEN.Text = item.En;
+                    cevap = item.Tr;
+                }
+                return;
+            }
             else
             {
                 MessageBox.Show("Hazırlık aşamasındayız", "Yükleniyor...", MessageBoxButtons.OK, MessageBoxIcon.Information);

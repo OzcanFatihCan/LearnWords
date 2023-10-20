@@ -45,6 +45,17 @@ namespace LogicLayer
                 return null;
             }
         }
+        public static List<EntityWord> LLFiilKelime(int sayi)
+        {
+            if (!string.IsNullOrEmpty(sayi.ToString()))
+            {
+                return DALWord.FiilKelimeGetir(sayi);
+            }
+            else
+            {
+                return null;
+            }
+        }
 
     }
 }
