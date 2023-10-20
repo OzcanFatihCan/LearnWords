@@ -22,11 +22,23 @@ namespace LogicLayer
             }
         }
 
-        public static List<EntityWord> LLEmoteFeelKelime(int sayi)
+        public static List<EntityWord> LLDuyguHisKelime(int sayi)
         {
             if (!string.IsNullOrEmpty(sayi.ToString()))
             {
-                return DALWord.EmoteFeelKelimeGetir(sayi);
+                return DALWord.DuyguHisKelimeGetir(sayi);
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public static List<EntityWord> LLSeyahatGeziKelime(int sayi)
+        {
+            if (!string.IsNullOrEmpty(sayi.ToString()))
+            {
+                return DALWord.SeyahatGeziKelimeGetir(sayi);
             }
             else
             {

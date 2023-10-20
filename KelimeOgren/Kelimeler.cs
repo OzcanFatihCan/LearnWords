@@ -36,11 +36,21 @@ namespace KelimeOgren
             }
             if(kategori==2)
             {
-                List<EntityWord> Kelimeler = LogicWord.LLEmoteFeelKelime(kategori);
+                List<EntityWord> Kelimeler = LogicWord.LLDuyguHisKelime(kategori);
                 foreach (var item in Kelimeler)
                 {
                     TxtEN.Text = item.En;
                     cevap = item.Tr;
+                }
+            }
+            if (kategori == 3)
+            {
+                List<EntityWord> Kelimeler = LogicWord.LLSeyahatGeziKelime(kategori);
+                foreach (var item in Kelimeler)
+                {
+                    TxtEN.Text = item.En;
+                    cevap = item.Tr;
+                   
                 }
             }
             else
@@ -55,6 +65,7 @@ namespace KelimeOgren
             ent.Kategori = kategori;
             ent.Dogru = dogru;
             LogicAccount.LLStatEkle(ent);
+            
         }
         private void KelimeAna_Load(object sender, EventArgs e)
         {              

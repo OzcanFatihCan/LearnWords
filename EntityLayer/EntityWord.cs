@@ -17,5 +17,6 @@ namespace EntityLayer
         public string En { get => en; set => en = value; }
         public string Tr { get => tr; set => tr = value; }
         public int Kategori { get => kategori; set => kategori = value; }
+      
     }
 }
