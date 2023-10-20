@@ -53,6 +53,7 @@
             this.BtnHisDuygu = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.BtnIs = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel9.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel10.SuspendLayout();
@@ -65,6 +66,7 @@
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel9
@@ -72,7 +74,7 @@
             this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(71)))), ((int)(((byte)(135)))));
             this.panel9.Controls.Add(this.BtnB1);
             this.panel9.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.panel9.Location = new System.Drawing.Point(522, 460);
+            this.panel9.Location = new System.Drawing.Point(531, 486);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(248, 145);
             this.panel9.TabIndex = 18;
@@ -95,7 +97,7 @@
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(61)))), ((int)(((byte)(98)))));
             this.panel5.Controls.Add(this.BtnA2);
             this.panel5.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.panel5.Location = new System.Drawing.Point(268, 460);
+            this.panel5.Location = new System.Drawing.Point(277, 486);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(248, 145);
             this.panel5.TabIndex = 19;
@@ -119,7 +121,7 @@
             this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(111)))), ((int)(((byte)(211)))));
             this.panel10.Controls.Add(this.BtnAlisveris);
             this.panel10.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.panel10.Location = new System.Drawing.Point(522, 309);
+            this.panel10.Location = new System.Drawing.Point(531, 335);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(248, 145);
             this.panel10.TabIndex = 16;
@@ -143,7 +145,7 @@
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(128)))), ((int)(((byte)(250)))));
             this.panel6.Controls.Add(this.BtnCihaz);
             this.panel6.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.panel6.Location = new System.Drawing.Point(522, 158);
+            this.panel6.Location = new System.Drawing.Point(531, 184);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(248, 145);
             this.panel6.TabIndex = 17;
@@ -167,7 +169,7 @@
             this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(112)))), ((int)(((byte)(147)))));
             this.panel11.Controls.Add(this.BtnKarisik);
             this.panel11.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.panel11.Location = new System.Drawing.Point(268, 309);
+            this.panel11.Location = new System.Drawing.Point(277, 335);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(248, 145);
             this.panel11.TabIndex = 14;
@@ -190,7 +192,7 @@
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(163)))), ((int)(((byte)(188)))));
             this.panel7.Controls.Add(this.BtnSifat);
             this.panel7.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.panel7.Location = new System.Drawing.Point(268, 158);
+            this.panel7.Location = new System.Drawing.Point(277, 184);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(248, 145);
             this.panel7.TabIndex = 15;
@@ -214,7 +216,7 @@
             this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(159)))), ((int)(((byte)(67)))));
             this.panel12.Controls.Add(this.BtnKafe);
             this.panel12.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.panel12.Location = new System.Drawing.Point(14, 309);
+            this.panel12.Location = new System.Drawing.Point(23, 335);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(248, 145);
             this.panel12.TabIndex = 12;
@@ -238,7 +240,7 @@
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(202)))), ((int)(((byte)(87)))));
             this.panel8.Controls.Add(this.BtnFiil);
             this.panel8.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.panel8.Location = new System.Drawing.Point(14, 158);
+            this.panel8.Location = new System.Drawing.Point(23, 184);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(248, 145);
             this.panel8.TabIndex = 13;
@@ -262,7 +264,7 @@
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(80)))), ((int)(((byte)(57)))));
             this.panel4.Controls.Add(this.BtnA1);
             this.panel4.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.panel4.Location = new System.Drawing.Point(14, 460);
+            this.panel4.Location = new System.Drawing.Point(23, 486);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(248, 145);
             this.panel4.TabIndex = 11;
@@ -286,7 +288,7 @@
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(136)))), ((int)(((byte)(255)))));
             this.panel3.Controls.Add(this.BtnGeziSeyehat);
             this.panel3.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.panel3.Location = new System.Drawing.Point(522, 7);
+            this.panel3.Location = new System.Drawing.Point(531, 33);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(248, 145);
             this.panel3.TabIndex = 10;
@@ -310,7 +312,7 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(204)))), ((int)(((byte)(221)))));
             this.panel2.Controls.Add(this.BtnHisDuygu);
             this.panel2.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.panel2.Location = new System.Drawing.Point(268, 7);
+            this.panel2.Location = new System.Drawing.Point(277, 33);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(248, 145);
             this.panel2.TabIndex = 9;
@@ -334,7 +336,7 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(221)))), ((int)(((byte)(89)))));
             this.panel1.Controls.Add(this.BtnIs);
             this.panel1.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.panel1.Location = new System.Drawing.Point(14, 7);
+            this.panel1.Location = new System.Drawing.Point(23, 33);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(248, 145);
             this.panel1.TabIndex = 8;
@@ -353,13 +355,28 @@
             this.BtnIs.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.BtnIs.Click += new System.EventHandler(this.BtnIs_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(390, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(26, 20);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 20;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox1.MouseLeave += new System.EventHandler(this.pictureBox1_MouseLeave);
+            this.pictureBox1.MouseHover += new System.EventHandler(this.pictureBox1_MouseHover);
+            // 
             // MenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(54)))), ((int)(((byte)(80)))));
-            this.ClientSize = new System.Drawing.Size(784, 611);
+            this.ClientSize = new System.Drawing.Size(800, 650);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel10);
@@ -373,6 +390,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.MaximizeBox = false;
@@ -404,6 +422,7 @@
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -434,5 +453,6 @@
         private System.Windows.Forms.Label BtnGeziSeyehat;
         private System.Windows.Forms.Label BtnHisDuygu;
         private System.Windows.Forms.Label BtnA2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

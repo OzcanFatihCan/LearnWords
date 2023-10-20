@@ -23,6 +23,7 @@ namespace KelimeOgren
         string cevap;
         public int kategori;
         public string kullaniciad;
+        
         void kelimegetir(int kategori)
         {
             if (kategori==1)
@@ -33,6 +34,7 @@ namespace KelimeOgren
                     TxtEN.Text = item.En;
                     cevap = item.Tr;
                 }
+                return;
             }
             if(kategori==2)
             {
@@ -42,6 +44,7 @@ namespace KelimeOgren
                     TxtEN.Text = item.En;
                     cevap = item.Tr;
                 }
+                return;
             }
             if (kategori == 3)
             {
@@ -49,13 +52,13 @@ namespace KelimeOgren
                 foreach (var item in Kelimeler)
                 {
                     TxtEN.Text = item.En;
-                    cevap = item.Tr;
-                   
+                    cevap = item.Tr;                   
                 }
+                return;
             }
             else
             {
-                MessageBox.Show("Hazırlık aşamasındayız", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Hazırlık aşamasındayız", "Yükleniyor...", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
         void stat(int dogru)
@@ -64,12 +67,11 @@ namespace KelimeOgren
             ent.Ad = kullaniciad;
             ent.Kategori = kategori;
             ent.Dogru = dogru;
-            LogicAccount.LLStatEkle(ent);
-            
+            LogicAccount.LLStatEkle(ent);           
         }
         private void KelimeAna_Load(object sender, EventArgs e)
         {              
-            BtnPas.Enabled=false;
+            BtnPas.Enabled=false;         
         }
 
         private void TxtTR_TextChanged(object sender, EventArgs e)
@@ -128,6 +130,13 @@ namespace KelimeOgren
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void BtnMenu_Click(object sender, EventArgs e)
+        {
+            MenuForm frm=new MenuForm();
+            frm.Show();
+            this.Close();
         }
     }
 }

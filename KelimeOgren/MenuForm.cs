@@ -17,14 +17,18 @@ namespace KelimeOgren
             InitializeComponent();
         }
         public string kullanici;
-        
+        private Kelimeler kelimeForm = null;
+
         void Kelimeler(int sayi)
         {
-            Kelimeler frm = new Kelimeler();
-            frm.kategori = sayi;
-            frm.kullaniciad = kullanici;
-            frm.Show();
-            this.Hide();            
+            if (kelimeForm == null || kelimeForm.IsDisposed)
+            {
+                kelimeForm = new Kelimeler();
+                kelimeForm.kategori = sayi;
+                kelimeForm.kullaniciad = kullanici;
+                this.Close();
+                kelimeForm.Show();           
+            }
         }
         private void MenuForm_Load(object sender, EventArgs e)
         {
@@ -89,6 +93,21 @@ namespace KelimeOgren
         private void BtnB1_Click(object sender, EventArgs e)
         {
             Kelimeler(12);
+        }
+
+        private void pictureBox1_MouseHover(object sender, EventArgs e)
+        {
+            pictureBox1.BackColor = Color.Red;
+        }
+
+        private void pictureBox1_MouseLeave(object sender, EventArgs e)
+        {
+            pictureBox1.BackColor = Color.Transparent;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

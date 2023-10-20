@@ -44,8 +44,9 @@
             this.BtnPas = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.BtnStat = new System.Windows.Forms.Button();
-            this.BtnMenü = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.BtnKelimeler = new System.Windows.Forms.Button();
+            this.BtnMenu = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -129,6 +130,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.BtnBaslat);
             this.groupBox1.Controls.Add(this.BtnPas);
             this.groupBox1.Controls.Add(this.TxtEN);
@@ -139,9 +141,9 @@
             this.groupBox1.Controls.Add(this.LblSüre);
             this.groupBox1.Controls.Add(this.TxtTR);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Location = new System.Drawing.Point(19, 43);
+            this.groupBox1.Location = new System.Drawing.Point(12, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(483, 185);
+            this.groupBox1.Size = new System.Drawing.Size(483, 234);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             // 
@@ -171,11 +173,12 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.BtnMenu);
+            this.groupBox2.Controls.Add(this.BtnKelimeler);
             this.groupBox2.Controls.Add(this.BtnStat);
-            this.groupBox2.Controls.Add(this.BtnMenü);
-            this.groupBox2.Location = new System.Drawing.Point(508, 43);
+            this.groupBox2.Location = new System.Drawing.Point(501, 4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(171, 185);
+            this.groupBox2.Size = new System.Drawing.Size(187, 234);
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
             // 
@@ -183,29 +186,19 @@
             // 
             this.BtnStat.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnStat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnStat.Location = new System.Drawing.Point(6, 99);
+            this.BtnStat.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnStat.Location = new System.Drawing.Point(6, 64);
             this.BtnStat.Name = "BtnStat";
-            this.BtnStat.Size = new System.Drawing.Size(159, 77);
+            this.BtnStat.Size = new System.Drawing.Size(175, 42);
             this.BtnStat.TabIndex = 6;
             this.BtnStat.Text = "İSTATİSTİKLER";
             this.BtnStat.UseVisualStyleBackColor = true;
-            // 
-            // BtnMenü
-            // 
-            this.BtnMenü.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnMenü.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnMenü.Location = new System.Drawing.Point(6, 16);
-            this.BtnMenü.Name = "BtnMenü";
-            this.BtnMenü.Size = new System.Drawing.Size(159, 77);
-            this.BtnMenü.TabIndex = 5;
-            this.BtnMenü.Text = "MENÜ";
-            this.BtnMenü.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(654, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(6, 195);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(43, 33);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -215,6 +208,31 @@
             this.pictureBox1.MouseLeave += new System.EventHandler(this.pictureBox1_MouseLeave);
             this.pictureBox1.MouseHover += new System.EventHandler(this.pictureBox1_MouseHover);
             // 
+            // BtnKelimeler
+            // 
+            this.BtnKelimeler.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnKelimeler.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnKelimeler.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnKelimeler.Location = new System.Drawing.Point(6, 16);
+            this.BtnKelimeler.Name = "BtnKelimeler";
+            this.BtnKelimeler.Size = new System.Drawing.Size(175, 42);
+            this.BtnKelimeler.TabIndex = 7;
+            this.BtnKelimeler.Text = "KELİMELER";
+            this.BtnKelimeler.UseVisualStyleBackColor = true;
+            // 
+            // BtnMenu
+            // 
+            this.BtnMenu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMenu.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnMenu.Location = new System.Drawing.Point(6, 112);
+            this.BtnMenu.Name = "BtnMenu";
+            this.BtnMenu.Size = new System.Drawing.Size(175, 42);
+            this.BtnMenu.TabIndex = 8;
+            this.BtnMenu.Text = "MENÜ";
+            this.BtnMenu.UseVisualStyleBackColor = true;
+            this.BtnMenu.Click += new System.EventHandler(this.BtnMenu_Click);
+            // 
             // Kelimeler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
@@ -222,7 +240,6 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(54)))), ((int)(((byte)(90)))));
             this.ClientSize = new System.Drawing.Size(700, 250);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -261,8 +278,9 @@
         private System.Windows.Forms.Button BtnPas;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button BtnStat;
-        private System.Windows.Forms.Button BtnMenü;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button BtnKelimeler;
+        private System.Windows.Forms.Button BtnMenu;
     }
 }
 
