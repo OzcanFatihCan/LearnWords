@@ -22,7 +22,7 @@ namespace LogicLayer
             }
         }
 
-        public static List<EntityAccount> llStatGetir(EntityAccount ent)
+        public static List<EntityAccount> LLStatGetir()
         {
             return DALAccount.StatGetir();
         }

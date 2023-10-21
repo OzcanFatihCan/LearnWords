@@ -148,5 +148,11 @@ namespace KelimeOgren
             frm.Show();
             this.Close();
         }
+
+        private void BtnStat_Click(object sender, EventArgs e)
+        {
+            AraclarForm frm=new AraclarForm();
+            frm.Show();
+        }
     }
 }

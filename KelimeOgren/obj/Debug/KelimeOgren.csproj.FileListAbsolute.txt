@@ -17,3 +17,5 @@ D:\Projeler\C#Projeler\GitProje\KelimeOgren\KelimeOgren\obj\Debug\KelimeOgren.pd
 D:\Projeler\C#Projeler\GitProje\KelimeOgren\KelimeOgren\obj\Debug\KelimeOgren.Kelimeler.resources
 D:\Projeler\C#Projeler\GitProje\KelimeOgren\KelimeOgren\obj\Debug\KelimeOgren.Anasayfa.resources
 D:\Projeler\C#Projeler\GitProje\KelimeOgren\KelimeOgren\obj\Debug\KelimeOgren.MenuForm.resources
+D:\Projeler\C#Projeler\GitProje\KelimeOgren\KelimeOgren\bin\Debug\MaterialSkin.dll
+D:\Projeler\C#Projeler\GitProje\KelimeOgren\KelimeOgren\obj\Debug\KelimeOgren.AraclarForm.resources

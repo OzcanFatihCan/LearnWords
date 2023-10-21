@@ -40,21 +40,21 @@
             this.label6 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BtnBaslat = new System.Windows.Forms.Button();
             this.BtnPas = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.BtnStat = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.BtnKelimeler = new System.Windows.Forms.Button();
             this.BtnMenu = new System.Windows.Forms.Button();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.BtnKelimeler = new System.Windows.Forms.Button();
+            this.BtnStat = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -150,6 +150,50 @@
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.label4);
+            this.groupBox4.Location = new System.Drawing.Point(15, 14);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(455, 44);
+            this.groupBox4.TabIndex = 13;
+            this.groupBox4.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 16);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(80, 19);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "Kategori:";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.label3);
+            this.groupBox3.Controls.Add(this.LblSüre);
+            this.groupBox3.Controls.Add(this.label6);
+            this.groupBox3.Controls.Add(this.LblKelime);
+            this.groupBox3.Location = new System.Drawing.Point(355, 64);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(115, 80);
+            this.groupBox3.TabIndex = 11;
+            this.groupBox3.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(6, 195);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(43, 33);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox1.MouseLeave += new System.EventHandler(this.pictureBox1_MouseLeave);
+            this.pictureBox1.MouseHover += new System.EventHandler(this.pictureBox1_MouseHover);
+            // 
             // BtnBaslat
             // 
             this.BtnBaslat.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -185,44 +229,6 @@
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
             // 
-            // BtnStat
-            // 
-            this.BtnStat.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnStat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnStat.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnStat.Location = new System.Drawing.Point(6, 64);
-            this.BtnStat.Name = "BtnStat";
-            this.BtnStat.Size = new System.Drawing.Size(175, 42);
-            this.BtnStat.TabIndex = 6;
-            this.BtnStat.Text = "İSTATİSTİKLER";
-            this.BtnStat.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(6, 195);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(43, 33);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            this.pictureBox1.MouseLeave += new System.EventHandler(this.pictureBox1_MouseLeave);
-            this.pictureBox1.MouseHover += new System.EventHandler(this.pictureBox1_MouseHover);
-            // 
-            // BtnKelimeler
-            // 
-            this.BtnKelimeler.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnKelimeler.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnKelimeler.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnKelimeler.Location = new System.Drawing.Point(6, 16);
-            this.BtnKelimeler.Name = "BtnKelimeler";
-            this.BtnKelimeler.Size = new System.Drawing.Size(175, 42);
-            this.BtnKelimeler.TabIndex = 7;
-            this.BtnKelimeler.Text = "KELİMELER";
-            this.BtnKelimeler.UseVisualStyleBackColor = true;
-            // 
             // BtnMenu
             // 
             this.BtnMenu.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -236,35 +242,30 @@
             this.BtnMenu.UseVisualStyleBackColor = true;
             this.BtnMenu.Click += new System.EventHandler(this.BtnMenu_Click);
             // 
-            // groupBox3
+            // BtnKelimeler
             // 
-            this.groupBox3.Controls.Add(this.label3);
-            this.groupBox3.Controls.Add(this.LblSüre);
-            this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Controls.Add(this.LblKelime);
-            this.groupBox3.Location = new System.Drawing.Point(355, 64);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(115, 80);
-            this.groupBox3.TabIndex = 11;
-            this.groupBox3.TabStop = false;
+            this.BtnKelimeler.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnKelimeler.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnKelimeler.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnKelimeler.Location = new System.Drawing.Point(6, 16);
+            this.BtnKelimeler.Name = "BtnKelimeler";
+            this.BtnKelimeler.Size = new System.Drawing.Size(175, 42);
+            this.BtnKelimeler.TabIndex = 7;
+            this.BtnKelimeler.Text = "KELİMELER";
+            this.BtnKelimeler.UseVisualStyleBackColor = true;
             // 
-            // label4
+            // BtnStat
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 16);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 19);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "Kategori:";
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.label4);
-            this.groupBox4.Location = new System.Drawing.Point(15, 14);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(455, 44);
-            this.groupBox4.TabIndex = 13;
-            this.groupBox4.TabStop = false;
+            this.BtnStat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnStat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnStat.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnStat.Location = new System.Drawing.Point(6, 64);
+            this.BtnStat.Name = "BtnStat";
+            this.BtnStat.Size = new System.Drawing.Size(175, 42);
+            this.BtnStat.TabIndex = 6;
+            this.BtnStat.Text = "İSTATİSTİKLER";
+            this.BtnStat.UseVisualStyleBackColor = true;
+            this.BtnStat.Click += new System.EventHandler(this.BtnStat_Click);
             // 
             // Kelimeler
             // 
@@ -289,12 +290,12 @@
             this.MouseHover += new System.EventHandler(this.pictureBox1_MouseHover);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
