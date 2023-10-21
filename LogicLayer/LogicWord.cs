@@ -56,5 +56,17 @@ namespace LogicLayer
                 return null;
             }
         }
+
+        public static List<EntityWord> LLSıfatKelime(int sayi)
+        {
+            if (!string.IsNullOrEmpty(sayi.ToString()))
+            {
+                return DALWord.SıfatKelimeGetir(sayi);
+            }
+            else
+            {
+                return null;
+            }
+        }
     }
 }

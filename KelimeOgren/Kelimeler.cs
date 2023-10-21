@@ -33,6 +33,7 @@ namespace KelimeOgren
                 {
                     TxtEN.Text = item.En;
                     cevap = item.Tr;
+                    label4.Text = "Kategori: İş Kelimeleri";
                 }
                 return;
             }
@@ -43,6 +44,7 @@ namespace KelimeOgren
                 {
                     TxtEN.Text = item.En;
                     cevap = item.Tr;
+                    label4.Text = "Kategori: Duygu ve Hisler";
                 }
                 return;
             }
@@ -52,7 +54,8 @@ namespace KelimeOgren
                 foreach (var item in Kelimeler)
                 {
                     TxtEN.Text = item.En;
-                    cevap = item.Tr;                   
+                    cevap = item.Tr;
+                    label4.Text = "Kategori: Seyehat ve Gezi";
                 }
                 return;
             }
@@ -63,6 +66,18 @@ namespace KelimeOgren
                 {
                     TxtEN.Text = item.En;
                     cevap = item.Tr;
+                    label4.Text = "Kategori: Fiiler";
+                }
+                return;
+            }
+            if (kategori == 5)
+            {
+                List<EntityWord> Kelimeler = LogicWord.LLSıfatKelime(kategori);
+                foreach (var item in Kelimeler)
+                {
+                    TxtEN.Text = item.En;
+                    cevap = item.Tr;
+                    label4.Text = "Kategori: Sıfatlar";
                 }
                 return;
             }
