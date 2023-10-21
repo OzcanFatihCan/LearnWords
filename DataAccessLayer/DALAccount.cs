@@ -25,5 +25,25 @@ namespace DataAccessLayer
             return komut.ExecuteNonQuery();
         }
         
+        public static List<EntityAccount> StatGetir()
+        {
+            List<EntityAccount> Stat= new List<EntityAccount>();
+            OleDbCommand komut2 = new OleDbCommand("SELECT * FROM STATISTICS",Baglanti.conn);
+            if (komut2.Connection.State != ConnectionState.Open)
+            {
+                komut2.Connection.Open();
+            }
+            OleDbDataReader dr = komut2.ExecuteReader();
+            while (dr.Read())
+            {
+                EntityAccount ent = new EntityAccount();
+                ent.Ad = dr["AD"].ToString();
+                ent.Dogru = int.Parse(dr["DOGRU"].ToString());
+                ent.Kategori = int.Parse(dr["KATEGORI"].ToString());
+                Stat.Add(ent);
+            }
+            dr.Close();
+            return Stat;
+        }
     }
 }

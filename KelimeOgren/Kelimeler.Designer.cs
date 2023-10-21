@@ -47,15 +47,20 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BtnKelimeler = new System.Windows.Forms.Button();
             this.BtnMenu = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(30, 32);
+            this.label1.Location = new System.Drawing.Point(21, 74);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(78, 19);
             this.label1.TabIndex = 0;
@@ -64,7 +69,7 @@
             // TxtEN
             // 
             this.TxtEN.Enabled = false;
-            this.TxtEN.Location = new System.Drawing.Point(115, 32);
+            this.TxtEN.Location = new System.Drawing.Point(106, 74);
             this.TxtEN.Name = "TxtEN";
             this.TxtEN.Size = new System.Drawing.Size(232, 26);
             this.TxtEN.TabIndex = 2;
@@ -72,7 +77,7 @@
             // TxtTR
             // 
             this.TxtTR.Enabled = false;
-            this.TxtTR.Location = new System.Drawing.Point(115, 76);
+            this.TxtTR.Location = new System.Drawing.Point(106, 118);
             this.TxtTR.Name = "TxtTR";
             this.TxtTR.Size = new System.Drawing.Size(232, 26);
             this.TxtTR.TabIndex = 1;
@@ -81,7 +86,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(30, 76);
+            this.label2.Location = new System.Drawing.Point(21, 118);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 19);
             this.label2.TabIndex = 2;
@@ -90,16 +95,16 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(397, 35);
+            this.label3.Location = new System.Drawing.Point(17, 24);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 19);
+            this.label3.Size = new System.Drawing.Size(66, 19);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Süre:";
+            this.label3.Text = "Zaman:";
             // 
             // LblSüre
             // 
             this.LblSüre.AutoSize = true;
-            this.LblSüre.Location = new System.Drawing.Point(445, 35);
+            this.LblSüre.Location = new System.Drawing.Point(80, 24);
             this.LblSüre.Name = "LblSüre";
             this.LblSüre.Size = new System.Drawing.Size(27, 19);
             this.LblSüre.TabIndex = 5;
@@ -108,7 +113,7 @@
             // LblKelime
             // 
             this.LblKelime.AutoSize = true;
-            this.LblKelime.Location = new System.Drawing.Point(445, 79);
+            this.LblKelime.Location = new System.Drawing.Point(84, 48);
             this.LblKelime.Name = "LblKelime";
             this.LblKelime.Size = new System.Drawing.Size(18, 19);
             this.LblKelime.TabIndex = 7;
@@ -117,7 +122,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(381, 79);
+            this.label6.Location = new System.Drawing.Point(16, 48);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(67, 19);
             this.label6.TabIndex = 6;
@@ -130,17 +135,15 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.groupBox4);
+            this.groupBox1.Controls.Add(this.groupBox3);
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.BtnBaslat);
             this.groupBox1.Controls.Add(this.BtnPas);
             this.groupBox1.Controls.Add(this.TxtEN);
-            this.groupBox1.Controls.Add(this.LblKelime);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.LblSüre);
             this.groupBox1.Controls.Add(this.TxtTR);
-            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Location = new System.Drawing.Point(12, 4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(483, 234);
@@ -151,7 +154,7 @@
             // 
             this.BtnBaslat.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnBaslat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnBaslat.Location = new System.Drawing.Point(236, 127);
+            this.BtnBaslat.Location = new System.Drawing.Point(227, 169);
             this.BtnBaslat.Name = "BtnBaslat";
             this.BtnBaslat.Size = new System.Drawing.Size(127, 49);
             this.BtnBaslat.TabIndex = 9;
@@ -163,7 +166,7 @@
             // 
             this.BtnPas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnPas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnPas.Location = new System.Drawing.Point(103, 127);
+            this.BtnPas.Location = new System.Drawing.Point(94, 169);
             this.BtnPas.Name = "BtnPas";
             this.BtnPas.Size = new System.Drawing.Size(127, 49);
             this.BtnPas.TabIndex = 8;
@@ -233,6 +236,36 @@
             this.BtnMenu.UseVisualStyleBackColor = true;
             this.BtnMenu.Click += new System.EventHandler(this.BtnMenu_Click);
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.label3);
+            this.groupBox3.Controls.Add(this.LblSüre);
+            this.groupBox3.Controls.Add(this.label6);
+            this.groupBox3.Controls.Add(this.LblKelime);
+            this.groupBox3.Location = new System.Drawing.Point(355, 64);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(115, 80);
+            this.groupBox3.TabIndex = 11;
+            this.groupBox3.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 16);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(80, 19);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "Kategori:";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.label4);
+            this.groupBox4.Location = new System.Drawing.Point(15, 14);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(455, 44);
+            this.groupBox4.TabIndex = 13;
+            this.groupBox4.TabStop = false;
+            // 
             // Kelimeler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
@@ -258,6 +291,10 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -281,6 +318,9 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button BtnKelimeler;
         private System.Windows.Forms.Button BtnMenu;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Label label4;
     }
 }
 

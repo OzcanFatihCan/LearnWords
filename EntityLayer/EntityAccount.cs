@@ -11,11 +11,11 @@ namespace EntityLayer
         private string ad;
         private int dogru;
         private int kategori;
-        private double basari;
+
 
         public string Ad { get => ad; set => ad = value; }
         public int Dogru { get => dogru; set => dogru = value; }
         public int Kategori { get => kategori; set => kategori = value; }
-        public double Basari { get => basari; set => basari = value; }
+
     }
 }

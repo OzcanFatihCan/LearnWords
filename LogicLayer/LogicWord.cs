@@ -56,6 +56,5 @@ namespace LogicLayer
                 return null;
             }
         }
-
     }
 }

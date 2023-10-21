@@ -21,5 +21,10 @@ namespace LogicLayer
                return -1;
             }
         }
+
+        public static List<EntityAccount> llStatGetir(EntityAccount ent)
+        {
+            return DALAccount.StatGetir();
+        }
     }
 }

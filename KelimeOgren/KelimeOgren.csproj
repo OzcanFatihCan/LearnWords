@@ -52,6 +52,12 @@
     <Compile Include="Anasayfa.Designer.cs">
       <DependentUpon>Anasayfa.cs</DependentUpon>
     </Compile>
+    <Compile Include="AraclarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AraclarForm.Designer.cs">
+      <DependentUpon>AraclarForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Kelimeler.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +74,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Anasayfa.resx">
       <DependentUpon>Anasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AraclarForm.resx">
+      <DependentUpon>AraclarForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Kelimeler.resx">
       <DependentUpon>Kelimeler.cs</DependentUpon>
