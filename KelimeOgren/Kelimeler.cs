@@ -149,6 +149,7 @@ namespace KelimeOgren
 
         private void BtnBaslat_Click(object sender, EventArgs e)
         {
+            LblKelime.Text = "0";
             kelimegetir(kategori);
             timer1.Start();
             BtnBaslat.Enabled = false;
@@ -185,8 +186,16 @@ namespace KelimeOgren
 
         private void BtnStat_Click(object sender, EventArgs e)
         {
-            AraclarForm frm=new AraclarForm();
-            frm.Show();
+            AraclarForm araclarForm = new AraclarForm();
+            araclarForm.OpenTabPage("İstatistikler"); 
+            araclarForm.ShowDialog();
+        }
+
+        private void BtnKelimeler_Click(object sender, EventArgs e)
+        {
+            AraclarForm araclarForm = new AraclarForm();
+            araclarForm.OpenTabPage("Kelimeler"); 
+            araclarForm.ShowDialog();
         }
     }
 }

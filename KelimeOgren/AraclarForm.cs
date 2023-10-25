@@ -27,8 +27,21 @@ namespace KelimeOgren
                 MaterialSkin.TextShade.WHITE);
         }
 
+        public void OpenTabPage(string tabPageName)
+        {
+            if (tabPageName == "Kelimeler")
+            {
+                materialTabControl1.SelectTab(tabPage2);
+            }
+            else if (tabPageName == "İstatistikler")
+            {
+                materialTabControl1.SelectTab(tabPage1);
+            }
+        }
+
         private void AraclarForm_Load(object sender, EventArgs e)
         {
+         
             dataGridView1.Columns.Add("AdColumn", "Ad"); 
             dataGridView1.Columns.Add("DogruColumn", "Doğru"); 
             dataGridView1.Columns.Add("KategoriColumn", "Kategori");

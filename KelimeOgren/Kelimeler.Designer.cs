@@ -253,6 +253,7 @@
             this.BtnKelimeler.TabIndex = 7;
             this.BtnKelimeler.Text = "KELİMELER";
             this.BtnKelimeler.UseVisualStyleBackColor = true;
+            this.BtnKelimeler.Click += new System.EventHandler(this.BtnKelimeler_Click);
             // 
             // BtnStat
             // 
