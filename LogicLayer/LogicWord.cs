@@ -68,5 +68,17 @@ namespace LogicLayer
                 return null;
             }
         }
+
+        public static List<EntityWord> LLCihazKelime(int sayi)
+        {
+            if (!string.IsNullOrEmpty(sayi.ToString()))
+            {
+                return DALWord.CihazKelimeGetir(sayi);
+            }
+            else
+            {
+                return null;
+            }
+        }
     }
 }

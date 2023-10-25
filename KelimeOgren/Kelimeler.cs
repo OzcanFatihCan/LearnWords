@@ -81,6 +81,17 @@ namespace KelimeOgren
                 }
                 return;
             }
+            if (kategori == 6)
+            {
+                List<EntityWord> Kelimeler = LogicWord.LLCihazKelime(kategori);
+                foreach (var item in Kelimeler)
+                {
+                    TxtEN.Text = item.En;
+                    cevap = item.Tr;
+                    label4.Text = "Kategori: Evde Kullanılan Cihazlar";
+                }
+                return;
+            }
             else
             {
                 MessageBox.Show("Hazırlık aşamasındayız", "Yükleniyor...", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -112,29 +123,37 @@ namespace KelimeOgren
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            sure--;
-            LblSüre.Text = sure.ToString();
-            if (sure==0)
+            if (label4.Text != "Kategori:") {
+                sure--;
+                LblSüre.Text = sure.ToString();
+                if (sure == 0)
+                {
+                    timer1.Stop();
+                    BtnBaslat.Enabled = true;
+                    BtnPas.Enabled = false;
+                    TxtTR.Enabled = false;
+                    MessageBox.Show("Süre Doldu", "bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    stat(kelime);
+                    sure = 90;
+                    kelime = 0;
+                }
+            }
+            else
             {
                 timer1.Stop();
                 BtnBaslat.Enabled = true;
                 BtnPas.Enabled = false;
                 TxtTR.Enabled = false;
-                MessageBox.Show("Süre Doldu", "bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                stat(kelime);
-                sure = 90;
-                kelime = 0;               
             }
         }
 
         private void BtnBaslat_Click(object sender, EventArgs e)
         {
+            kelimegetir(kategori);
             timer1.Start();
             BtnBaslat.Enabled = false;
             BtnPas.Enabled = true;
-            TxtTR.Enabled = true;
-
-            kelimegetir(kategori);
+            TxtTR.Enabled = true;                   
         }
 
         private void BtnPas_Click(object sender, EventArgs e)
