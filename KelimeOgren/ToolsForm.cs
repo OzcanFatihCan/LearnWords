@@ -1,5 +1,6 @@
 ﻿using EntityLayer;
 using LogicLayer;
+using MaterialSkin;
 using MaterialSkin.Controls;
 using System;
 using System.Collections.Generic;
@@ -15,16 +16,16 @@ namespace KelimeOgren
 {
     public partial class ToolsForm : MaterialForm
     {
-        readonly MaterialSkin.MaterialSkinManager materialSkinManager;
+      
         public ToolsForm()
         {
             InitializeComponent();
-            materialSkinManager=MaterialSkin.MaterialSkinManager.Instance;
-            materialSkinManager.EnforceBackcolorOnAllComponents = true;
-            materialSkinManager.AddFormToManage(this);
-            materialSkinManager.Theme = MaterialSkin.MaterialSkinManager.Themes.LIGHT;
-            materialSkinManager.ColorScheme = new MaterialSkin.ColorScheme(MaterialSkin.Primary.BlueGrey900, MaterialSkin.Primary.BlueGrey700, MaterialSkin.Primary.BlueGrey600,MaterialSkin.Accent.DeepPurple700,
-                MaterialSkin.TextShade.WHITE);
+            var materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.EnforceBackcolorOnAllComponents = false;
+            materialSkinManager.AddFormToManage(this);          
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey900, Primary.BlueGrey700, Primary.BlueGrey600, Accent.LightBlue200, TextShade.BLACK);
+            
         }
 
         public void OpenTabPage(string tabPageName)

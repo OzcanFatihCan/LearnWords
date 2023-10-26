@@ -118,7 +118,7 @@ namespace KelimeOgren
         }
         private void KelimeAna_Load(object sender, EventArgs e)
         {              
-            BtnPas.Enabled=false;         
+            BtnPas.Enabled=false;           
         }
 
         private void TxtTR_TextChanged(object sender, EventArgs e)

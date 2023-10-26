@@ -268,7 +268,7 @@
             this.BtnStat.UseVisualStyleBackColor = true;
             this.BtnStat.Click += new System.EventHandler(this.BtnStat_Click);
             // 
-            // Kelimeler
+            // WordsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -283,7 +283,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.MaximizeBox = false;
-            this.Name = "Kelimeler";
+            this.Name = "WordsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kelime Öğren";
             this.Load += new System.EventHandler(this.KelimeAna_Load);
