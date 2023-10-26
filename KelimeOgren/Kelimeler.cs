@@ -92,6 +92,17 @@ namespace KelimeOgren
                 }
                 return;
             }
+            if (kategori == 7)
+            {
+                List<EntityWord> Kelimeler = LogicWord.LLSohbetKafeKelime(kategori);
+                foreach (var item in Kelimeler)
+                {
+                    TxtEN.Text = item.En;
+                    cevap = item.Tr;
+                    label4.Text = "Kategori: Sohbet, Kafe ve Restoran";
+                }
+                return;
+            }
             else
             {
                 MessageBox.Show("Hazırlık aşamasındayız", "Yükleniyor...", MessageBoxButtons.OK, MessageBoxIcon.Information);

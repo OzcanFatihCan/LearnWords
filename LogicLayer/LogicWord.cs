@@ -80,5 +80,17 @@ namespace LogicLayer
                 return null;
             }
         }
+
+        public static List<EntityWord> LLSohbetKafeKelime(int sayi)
+        {
+            if (!string.IsNullOrEmpty(sayi.ToString()))
+            {
+                return DALWord.SohbetKafeKelimeGetir(sayi);
+            }
+            else
+            {
+                return null;
+            }
+        }
     }
 }

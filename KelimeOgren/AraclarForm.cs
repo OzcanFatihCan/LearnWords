@@ -40,8 +40,7 @@ namespace KelimeOgren
         }
 
         private void AraclarForm_Load(object sender, EventArgs e)
-        {
-         
+        {        
             dataGridView1.Columns.Add("AdColumn", "Ad"); 
             dataGridView1.Columns.Add("DogruColumn", "Doğru"); 
             dataGridView1.Columns.Add("KategoriColumn", "Kategori");
@@ -78,7 +77,7 @@ namespace KelimeOgren
                 }
                 if (item.Kategori == 7)
                 {
-                    dataGridView1.Rows[rowIndex].Cells[2].Value = "Sohbet, Kafe";
+                    dataGridView1.Rows[rowIndex].Cells[2].Value = "Sohbet, Kafe & Restoran";
                 }
                 if (item.Kategori == 8)
                 {
