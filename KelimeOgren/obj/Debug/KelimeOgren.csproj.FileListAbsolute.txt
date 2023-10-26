@@ -14,8 +14,8 @@ D:\Projeler\C#Projeler\GitProje\KelimeOgren\KelimeOgren\obj\Debug\KelimeOgren.cs
 D:\Projeler\C#Projeler\GitProje\KelimeOgren\KelimeOgren\obj\Debug\KelimeOgren.csproj.CopyComplete
 D:\Projeler\C#Projeler\GitProje\KelimeOgren\KelimeOgren\obj\Debug\KelimeOgren.exe
 D:\Projeler\C#Projeler\GitProje\KelimeOgren\KelimeOgren\obj\Debug\KelimeOgren.pdb
-D:\Projeler\C#Projeler\GitProje\KelimeOgren\KelimeOgren\obj\Debug\KelimeOgren.Kelimeler.resources
-D:\Projeler\C#Projeler\GitProje\KelimeOgren\KelimeOgren\obj\Debug\KelimeOgren.Anasayfa.resources
 D:\Projeler\C#Projeler\GitProje\KelimeOgren\KelimeOgren\obj\Debug\KelimeOgren.MenuForm.resources
 D:\Projeler\C#Projeler\GitProje\KelimeOgren\KelimeOgren\bin\Debug\MaterialSkin.dll
-D:\Projeler\C#Projeler\GitProje\KelimeOgren\KelimeOgren\obj\Debug\KelimeOgren.AraclarForm.resources
+D:\Projeler\C#Projeler\GitProje\KelimeOgren\KelimeOgren\obj\Debug\KelimeOgren.ToolsForm.resources
+D:\Projeler\C#Projeler\GitProje\KelimeOgren\KelimeOgren\obj\Debug\KelimeOgren.WordsForm.resources
+D:\Projeler\C#Projeler\GitProje\KelimeOgren\KelimeOgren\obj\Debug\KelimeOgren.HomeForm.resources

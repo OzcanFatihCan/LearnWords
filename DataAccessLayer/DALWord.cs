@@ -12,178 +12,232 @@ namespace DataAccessLayer
     public class DALWord
     {       
         public static List<EntityWord> IsKelimeGetir(int kategori)
-        {
-            Random rnd = new Random();
-            int sayi = rnd.Next(1, 92);
+        {   
+            try
+            {
+                Random rnd = new Random();
+                int sayi = rnd.Next(1, 92);
 
-            List<EntityWord> Kelimeler = new List<EntityWord>();
-            OleDbCommand komut = new OleDbCommand("SELECT * FROM JOBWORD WHERE ID=@P1 and KATEGORI=@P2", Baglanti.conn);
-            if (komut.Connection.State != ConnectionState.Open)
-            {
-                komut.Connection.Open();
+                List<EntityWord> Kelimeler = new List<EntityWord>();
+                OleDbCommand komut = new OleDbCommand("SELECT * FROM JOBWORD WHERE ID=@P1 and KATEGORI=@P2", Baglanti.conn);
+                if (komut.Connection.State != ConnectionState.Open)
+                {
+                    komut.Connection.Open();
+                }
+                komut.Parameters.AddWithValue("@P1", sayi);
+                komut.Parameters.AddWithValue("@P2", kategori);
+                OleDbDataReader dr = komut.ExecuteReader();
+                while (dr.Read())
+                {
+                    EntityWord ent = new EntityWord();
+                    ent.En = dr["EN"].ToString().ToLower();
+                    ent.Tr = dr["TR"].ToString().ToLower();
+                    Kelimeler.Add(ent);
+                }
+                dr.Close();
+                return Kelimeler;
             }
-            komut.Parameters.AddWithValue("@P1", sayi);
-            komut.Parameters.AddWithValue("@P2", kategori);
-            OleDbDataReader dr = komut.ExecuteReader();
-            while (dr.Read())
+            catch (Exception)
             {
-                EntityWord ent = new EntityWord();
-                ent.En = dr["EN"].ToString().ToLower();
-                ent.Tr = dr["TR"].ToString().ToLower();
-                Kelimeler.Add(ent);
+
+                throw;
             }
-            dr.Close();
-            return Kelimeler;
         }
 
         public static List<EntityWord> DuyguHisKelimeGetir(int kategori)
         {
-            Random rnd = new Random();
-            int sayi = rnd.Next(1, 40);
+            try
+            {
+                Random rnd = new Random();
+                int sayi = rnd.Next(1, 40);
 
-            List<EntityWord> Kelimeler = new List<EntityWord>();
-            OleDbCommand komut = new OleDbCommand("SELECT * FROM EMOTEFEELWORD WHERE ID=@P1 and KATEGORI=@P2", Baglanti.conn);
-            if (komut.Connection.State != ConnectionState.Open)
-            {
-                komut.Connection.Open();
+                List<EntityWord> Kelimeler = new List<EntityWord>();
+                OleDbCommand komut = new OleDbCommand("SELECT * FROM EMOTEFEELWORD WHERE ID=@P1 and KATEGORI=@P2", Baglanti.conn);
+                if (komut.Connection.State != ConnectionState.Open)
+                {
+                    komut.Connection.Open();
+                }
+                komut.Parameters.AddWithValue("@P1", sayi);
+                komut.Parameters.AddWithValue("@P2", kategori);
+                OleDbDataReader dr = komut.ExecuteReader();
+                while (dr.Read())
+                {
+                    EntityWord ent = new EntityWord();
+                    ent.En = dr["EN"].ToString().ToLower();
+                    ent.Tr = dr["TR"].ToString().ToLower();
+                    Kelimeler.Add(ent);
+                }
+                dr.Close();
+                return Kelimeler;
             }
-            komut.Parameters.AddWithValue("@P1", sayi);
-            komut.Parameters.AddWithValue("@P2", kategori);
-            OleDbDataReader dr = komut.ExecuteReader();
-            while (dr.Read())
+            catch (Exception)
             {
-                EntityWord ent = new EntityWord();
-                ent.En = dr["EN"].ToString().ToLower();
-                ent.Tr = dr["TR"].ToString().ToLower();
-                Kelimeler.Add(ent);
+                throw;
             }
-            dr.Close();
-            return Kelimeler;
         }
 
         public static List<EntityWord> SeyahatGeziKelimeGetir(int kategori)
         {
-            Random rnd = new Random();
-            int sayi = rnd.Next(1, 43);
+            try
+            {
+                Random rnd = new Random();
+                int sayi = rnd.Next(1, 43);
 
-            List<EntityWord> Kelimeler = new List<EntityWord>();
-            OleDbCommand komut = new OleDbCommand("SELECT * FROM TRAVELWORD WHERE ID=@P1 and KATEGORI=@P2", Baglanti.conn);
-            if (komut.Connection.State != ConnectionState.Open)
-            {
-                komut.Connection.Open();
+                List<EntityWord> Kelimeler = new List<EntityWord>();
+                OleDbCommand komut = new OleDbCommand("SELECT * FROM TRAVELWORD WHERE ID=@P1 and KATEGORI=@P2", Baglanti.conn);
+                if (komut.Connection.State != ConnectionState.Open)
+                {
+                    komut.Connection.Open();
+                }
+                komut.Parameters.AddWithValue("@P1", sayi);
+                komut.Parameters.AddWithValue("@P2", kategori);
+                OleDbDataReader dr = komut.ExecuteReader();
+                while (dr.Read())
+                {
+                    EntityWord ent = new EntityWord();
+                    ent.En = dr["EN"].ToString().ToLower();
+                    ent.Tr = dr["TR"].ToString().ToLower();
+                    Kelimeler.Add(ent);
+                }
+                dr.Close();
+                return Kelimeler;
             }
-            komut.Parameters.AddWithValue("@P1", sayi);
-            komut.Parameters.AddWithValue("@P2", kategori);
-            OleDbDataReader dr = komut.ExecuteReader();
-            while (dr.Read())
+            catch (Exception)
             {
-                EntityWord ent = new EntityWord();
-                ent.En = dr["EN"].ToString().ToLower();
-                ent.Tr = dr["TR"].ToString().ToLower();
-                Kelimeler.Add(ent);
+
+                throw;
             }
-            dr.Close();
-            return Kelimeler;
         }
 
         public static List<EntityWord> FiilKelimeGetir(int kategori)
         {
-            Random rnd = new Random();
-            int sayi = rnd.Next(1, 52);
+            try
+            {
+                Random rnd = new Random();
+                int sayi = rnd.Next(1, 52);
 
-            List<EntityWord> Kelimeler = new List<EntityWord>();
-            OleDbCommand komut = new OleDbCommand("SELECT * FROM VERBWORD WHERE ID=@P1 and KATEGORI=@P2", Baglanti.conn);
-            if (komut.Connection.State != ConnectionState.Open)
-            {
-                komut.Connection.Open();
+                List<EntityWord> Kelimeler = new List<EntityWord>();
+                OleDbCommand komut = new OleDbCommand("SELECT * FROM VERBWORD WHERE ID=@P1 and KATEGORI=@P2", Baglanti.conn);
+                if (komut.Connection.State != ConnectionState.Open)
+                {
+                    komut.Connection.Open();
+                }
+                komut.Parameters.AddWithValue("@P1", sayi);
+                komut.Parameters.AddWithValue("@P2", kategori);
+                OleDbDataReader dr = komut.ExecuteReader();
+                while (dr.Read())
+                {
+                    EntityWord ent = new EntityWord();
+                    ent.En = dr["EN"].ToString().ToLower();
+                    ent.Tr = dr["TR"].ToString().ToLower();
+                    Kelimeler.Add(ent);
+                }
+                dr.Close();
+                return Kelimeler;
             }
-            komut.Parameters.AddWithValue("@P1", sayi);
-            komut.Parameters.AddWithValue("@P2", kategori);
-            OleDbDataReader dr = komut.ExecuteReader();
-            while (dr.Read())
+            catch (Exception)
             {
-                EntityWord ent = new EntityWord();
-                ent.En = dr["EN"].ToString().ToLower();
-                ent.Tr = dr["TR"].ToString().ToLower();
-                Kelimeler.Add(ent);
+
+                throw;
             }
-            dr.Close();
-            return Kelimeler;
         }
 
         public static List<EntityWord> SıfatKelimeGetir(int kategori)
         {
-            Random rnd = new Random();
-            int sayi = rnd.Next(1, 51);
+            try
+            {
+                Random rnd = new Random();
+                int sayi = rnd.Next(1, 51);
 
-            List<EntityWord> Kelimeler = new List<EntityWord>();
-            OleDbCommand komut = new OleDbCommand("SELECT * FROM ADJECTIVEWORD WHERE ID=@P1 and KATEGORI=@P2", Baglanti.conn);
-            if (komut.Connection.State != ConnectionState.Open)
-            {
-                komut.Connection.Open();
+                List<EntityWord> Kelimeler = new List<EntityWord>();
+                OleDbCommand komut = new OleDbCommand("SELECT * FROM ADJECTIVEWORD WHERE ID=@P1 and KATEGORI=@P2", Baglanti.conn);
+                if (komut.Connection.State != ConnectionState.Open)
+                {
+                    komut.Connection.Open();
+                }
+                komut.Parameters.AddWithValue("@P1", sayi);
+                komut.Parameters.AddWithValue("@P2", kategori);
+                OleDbDataReader dr = komut.ExecuteReader();
+                while (dr.Read())
+                {
+                    EntityWord ent = new EntityWord();
+                    ent.En = dr["EN"].ToString().ToLower();
+                    ent.Tr = dr["TR"].ToString().ToLower();
+                    Kelimeler.Add(ent);
+                }
+                dr.Close();
+                return Kelimeler;
             }
-            komut.Parameters.AddWithValue("@P1", sayi);
-            komut.Parameters.AddWithValue("@P2", kategori);
-            OleDbDataReader dr = komut.ExecuteReader();
-            while (dr.Read())
+            catch (Exception)
             {
-                EntityWord ent = new EntityWord();
-                ent.En = dr["EN"].ToString().ToLower();
-                ent.Tr = dr["TR"].ToString().ToLower();
-                Kelimeler.Add(ent);
+                throw;
             }
-            dr.Close();
-            return Kelimeler;
         }
 
         public static List<EntityWord> CihazKelimeGetir(int kategori)
         {
-            Random rnd = new Random();
-            int sayi = rnd.Next(1, 31);
+            try
+            {
+                Random rnd = new Random();
+                int sayi = rnd.Next(1, 31);
 
-            List<EntityWord> Kelimeler = new List<EntityWord>();
-            OleDbCommand komut = new OleDbCommand("SELECT * FROM HOMEDEVICESWORD WHERE ID=@P1 and KATEGORI=@P2", Baglanti.conn);
-            if (komut.Connection.State != ConnectionState.Open)
-            {
-                komut.Connection.Open();
+                List<EntityWord> Kelimeler = new List<EntityWord>();
+                OleDbCommand komut = new OleDbCommand("SELECT * FROM HOMEDEVICESWORD WHERE ID=@P1 and KATEGORI=@P2", Baglanti.conn);
+                if (komut.Connection.State != ConnectionState.Open)
+                {
+                    komut.Connection.Open();
+                }
+                komut.Parameters.AddWithValue("@P1", sayi);
+                komut.Parameters.AddWithValue("@P2", kategori);
+                OleDbDataReader dr = komut.ExecuteReader();
+                while (dr.Read())
+                {
+                    EntityWord ent = new EntityWord();
+                    ent.En = dr["EN"].ToString().ToLower();
+                    ent.Tr = dr["TR"].ToString().ToLower();
+                    Kelimeler.Add(ent);
+                }
+                dr.Close();
+                return Kelimeler;
             }
-            komut.Parameters.AddWithValue("@P1", sayi);
-            komut.Parameters.AddWithValue("@P2", kategori);
-            OleDbDataReader dr = komut.ExecuteReader();
-            while (dr.Read())
+            catch (Exception)
             {
-                EntityWord ent = new EntityWord();
-                ent.En = dr["EN"].ToString().ToLower();
-                ent.Tr = dr["TR"].ToString().ToLower();
-                Kelimeler.Add(ent);
+
+                throw;
             }
-            dr.Close();
-            return Kelimeler;
         }
 
         public static List<EntityWord> SohbetKafeKelimeGetir(int kategori)
         {
-            Random rnd = new Random();
-            int sayi = rnd.Next(1, 69);
+            try
+            {
+                Random rnd = new Random();
+                int sayi = rnd.Next(1, 69);
 
-            List<EntityWord> Kelimeler = new List<EntityWord>();
-            OleDbCommand komut = new OleDbCommand("SELECT * FROM CHATCAFEWORD WHERE ID=@P1 and KATEGORI=@P2", Baglanti.conn);
-            if (komut.Connection.State != ConnectionState.Open)
-            {
-                komut.Connection.Open();
+                List<EntityWord> Kelimeler = new List<EntityWord>();
+                OleDbCommand komut = new OleDbCommand("SELECT * FROM CHATCAFEWORD WHERE ID=@P1 and KATEGORI=@P2", Baglanti.conn);
+                if (komut.Connection.State != ConnectionState.Open)
+                {
+                    komut.Connection.Open();
+                }
+                komut.Parameters.AddWithValue("@P1", sayi);
+                komut.Parameters.AddWithValue("@P2", kategori);
+                OleDbDataReader dr = komut.ExecuteReader();
+                while (dr.Read())
+                {
+                    EntityWord ent = new EntityWord();
+                    ent.En = dr["EN"].ToString().ToLower();
+                    ent.Tr = dr["TR"].ToString().ToLower();
+                    Kelimeler.Add(ent);
+                }
+                dr.Close();
+                return Kelimeler;
             }
-            komut.Parameters.AddWithValue("@P1", sayi);
-            komut.Parameters.AddWithValue("@P2", kategori);
-            OleDbDataReader dr = komut.ExecuteReader();
-            while (dr.Read())
+            catch (Exception)
             {
-                EntityWord ent = new EntityWord();
-                ent.En = dr["EN"].ToString().ToLower();
-                ent.Tr = dr["TR"].ToString().ToLower();
-                Kelimeler.Add(ent);
+
+                throw;
             }
-            dr.Close();
-            return Kelimeler;
         }
     }
 }

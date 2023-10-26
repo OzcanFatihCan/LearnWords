@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace KelimeOgren
 {
-    public partial class Kelimeler : Form
+    public partial class WordsForm : Form
     {
-        public Kelimeler()
+        public WordsForm()
         {
             InitializeComponent();
         }
@@ -197,14 +197,14 @@ namespace KelimeOgren
 
         private void BtnStat_Click(object sender, EventArgs e)
         {
-            AraclarForm araclarForm = new AraclarForm();
+            ToolsForm araclarForm = new ToolsForm();
             araclarForm.OpenTabPage("İstatistikler"); 
             araclarForm.ShowDialog();
         }
 
         private void BtnKelimeler_Click(object sender, EventArgs e)
         {
-            AraclarForm araclarForm = new AraclarForm();
+            ToolsForm araclarForm = new ToolsForm();
             araclarForm.OpenTabPage("Kelimeler"); 
             araclarForm.ShowDialog();
         }

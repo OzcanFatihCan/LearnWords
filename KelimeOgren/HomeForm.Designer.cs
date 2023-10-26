@@ -1,6 +1,6 @@
 ﻿namespace KelimeOgren
 {
-    partial class Anasayfa
+    partial class HomeForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Anasayfa));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeForm));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BtnBasla = new System.Windows.Forms.Button();
             this.TxtAd = new System.Windows.Forms.TextBox();

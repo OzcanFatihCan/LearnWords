@@ -1,6 +1,6 @@
 ﻿namespace KelimeOgren
 {
-    partial class AraclarForm
+    partial class ToolsForm
     {
         /// <summary>
         /// Required designer variable.
@@ -32,7 +32,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AraclarForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ToolsForm));
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -55,7 +55,7 @@
             this.materialTabControl1.Multiline = true;
             this.materialTabControl1.Name = "materialTabControl1";
             this.materialTabControl1.SelectedIndex = 0;
-            this.materialTabControl1.Size = new System.Drawing.Size(1013, 522);
+            this.materialTabControl1.Size = new System.Drawing.Size(1029, 561);
             this.materialTabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -67,7 +67,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 39);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1005, 479);
+            this.tabPage1.Size = new System.Drawing.Size(1021, 518);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "İstatistikler";
             // 
@@ -103,7 +103,7 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridView1.Size = new System.Drawing.Size(999, 473);
+            this.dataGridView1.Size = new System.Drawing.Size(1015, 512);
             this.dataGridView1.TabIndex = 0;
             // 
             // tabPage2
@@ -114,7 +114,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 39);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(989, 440);
+            this.tabPage2.Size = new System.Drawing.Size(1005, 479);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Kelimeler";
             // 
@@ -125,12 +125,12 @@
             this.ımageList1.Images.SetKeyName(0, "stat2.png");
             this.ımageList1.Images.SetKeyName(1, "Word.png");
             // 
-            // AraclarForm
+            // ToolsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1016, 589);
+            this.ClientSize = new System.Drawing.Size(1032, 628);
             this.Controls.Add(this.materialTabControl1);
             this.DrawerAutoShow = true;
             this.DrawerShowIconsWhenHidden = true;
@@ -143,7 +143,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.MaximizeBox = false;
-            this.Name = "AraclarForm";
+            this.Name = "ToolsForm";
             this.Padding = new System.Windows.Forms.Padding(0, 64, 3, 3);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Araçlar";

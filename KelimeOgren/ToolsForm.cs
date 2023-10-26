@@ -13,10 +13,10 @@ using System.Windows.Forms;
 
 namespace KelimeOgren
 {
-    public partial class AraclarForm : MaterialForm
+    public partial class ToolsForm : MaterialForm
     {
         readonly MaterialSkin.MaterialSkinManager materialSkinManager;
-        public AraclarForm()
+        public ToolsForm()
         {
             InitializeComponent();
             materialSkinManager=MaterialSkin.MaterialSkinManager.Instance;

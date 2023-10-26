@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace KelimeOgren
 {
-    public partial class Anasayfa : Form
+    public partial class HomeForm : Form
     {
-        public Anasayfa()
+        public HomeForm()
         {
             InitializeComponent();
         }

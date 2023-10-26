@@ -17,13 +17,13 @@ namespace KelimeOgren
             InitializeComponent();
         }
         public string kullanici;
-        private Kelimeler kelimeForm = null;
+        private WordsForm kelimeForm = null;
 
         void Kelimeler(int sayi)
         {
             if (kelimeForm == null || kelimeForm.IsDisposed)
             {
-                kelimeForm = new Kelimeler();
+                kelimeForm = new WordsForm();
                 kelimeForm.kategori = sayi;
                 kelimeForm.kullaniciad = kullanici;
                 this.Close();

@@ -50,23 +50,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Anasayfa.cs">
+    <Compile Include="HomeForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Anasayfa.Designer.cs">
-      <DependentUpon>Anasayfa.cs</DependentUpon>
+    <Compile Include="HomeForm.Designer.cs">
+      <DependentUpon>HomeForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="AraclarForm.cs">
+    <Compile Include="ToolsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AraclarForm.Designer.cs">
-      <DependentUpon>AraclarForm.cs</DependentUpon>
+    <Compile Include="ToolsForm.Designer.cs">
+      <DependentUpon>ToolsForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Kelimeler.cs">
+    <Compile Include="WordsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Kelimeler.Designer.cs">
-      <DependentUpon>Kelimeler.cs</DependentUpon>
+    <Compile Include="WordsForm.Designer.cs">
+      <DependentUpon>WordsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MenuForm.cs">
       <SubType>Form</SubType>
@@ -76,14 +76,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Anasayfa.resx">
-      <DependentUpon>Anasayfa.cs</DependentUpon>
+    <EmbeddedResource Include="HomeForm.resx">
+      <DependentUpon>HomeForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AraclarForm.resx">
-      <DependentUpon>AraclarForm.cs</DependentUpon>
+    <EmbeddedResource Include="ToolsForm.resx">
+      <DependentUpon>ToolsForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Kelimeler.resx">
-      <DependentUpon>Kelimeler.cs</DependentUpon>
+    <EmbeddedResource Include="WordsForm.resx">
+      <DependentUpon>WordsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuForm.resx">
       <DependentUpon>MenuForm.cs</DependentUpon>
