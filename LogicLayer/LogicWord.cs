@@ -103,5 +103,17 @@ namespace LogicLayer
                 return null;
             }
         }
+
+        public static List<EntityWord> LLKelimeAra(string tabloAdi, string arananKelime)
+        {
+            if (!string.IsNullOrEmpty(tabloAdi))
+            {
+                return DALWord.KelimeAra(tabloAdi,arananKelime);
+            }
+            else
+            {
+                return null;
+            }
+        }
     }
 }

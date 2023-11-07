@@ -242,8 +242,7 @@ namespace DataAccessLayer
         }
 
         public static List<EntityWord> TabloKelimeGetir(string tabloAdi)
-        {
-           
+        {          
             try
             {
                 List<EntityWord> KelimeTabloları = new List<EntityWord>();
@@ -267,6 +266,34 @@ namespace DataAccessLayer
             }
             catch (Exception)
             {
+                throw;
+            }
+        }
+       public static List<EntityWord> KelimeAra(string tabloAdi,string arananKelime)
+        {
+            try
+            {
+                List<EntityWord> KelimeLog = new List<EntityWord>();
+                string query = "SELECT EN,TR FROM " + tabloAdi + " WHERE "+tabloAdi+ ".EN LIKE '%" + arananKelime + "%' OR "+tabloAdi + ".TR LIKE '%" + arananKelime + "%'";
+                OleDbCommand komut = new OleDbCommand(query, Baglanti.conn);
+                if (komut.Connection.State != ConnectionState.Open)
+                {
+                    komut.Connection.Open();
+                }
+                OleDbDataReader dr = komut.ExecuteReader();
+                while (dr.Read())
+                {
+                    EntityWord ent = new EntityWord();
+                    ent.En = dr["EN"].ToString().ToLower();
+                    ent.Tr = dr["TR"].ToString().ToLower();
+
+                    KelimeLog.Add(ent);
+                }
+                return KelimeLog;
+            }
+            catch (Exception)
+            {
+
                 throw;
             }
         }
