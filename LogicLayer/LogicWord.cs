@@ -92,5 +92,16 @@ namespace LogicLayer
                 return null;
             }
         }
+        public static List<EntityWord> LLTabloKelimeGetir(string tabloAdi)
+        {
+            if (!string.IsNullOrEmpty(tabloAdi))
+            {
+                return DALWord.TabloKelimeGetir(tabloAdi);
+            }
+            else
+            {
+                return null;
+            }
+        }
     }
 }

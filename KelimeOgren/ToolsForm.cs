@@ -102,5 +102,75 @@ namespace KelimeOgren
                 }               
             }           
         }
+
+        void TabloGetir(string TabloAdi)
+        {
+            List<EntityWord> Tablolar = LogicWord.LLTabloKelimeGetir(TabloAdi);
+            if (Tablolar != null)
+            {
+                foreach (var item in Tablolar)
+                {
+                    dataGridView2.Rows.Add(item.En, item.Tr);
+                }
+            }
+            else
+            {
+                MessageBox.Show("İlgili tablonun içeriği şu an boş","Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            }
+        }
+
+        private void CmbKelimeKategori_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            dataGridView2.Rows.Clear();
+            if (CmbKelimeKategori.SelectedItem.ToString() == "İş Kelimeleri")
+            {
+                TabloGetir("JOBWORD");
+            }
+            if (CmbKelimeKategori.SelectedItem.ToString() == "His ve Duygu")
+            {
+                TabloGetir("EMOTEFEELWORD");
+            }
+            if (CmbKelimeKategori.SelectedItem.ToString() == "Gezi ve Seyehat")
+            {
+                TabloGetir("TRAVELWORD");
+            }
+            if (CmbKelimeKategori.SelectedItem.ToString() == "Fiiler")
+            {
+                TabloGetir("VERBWORD");
+            }
+            if (CmbKelimeKategori.SelectedItem.ToString() == "Sıfatlar")
+            {
+                TabloGetir("ADJECTIVEWORD");
+            }
+            if (CmbKelimeKategori.SelectedItem.ToString() == "Cihazlar")
+            {
+                TabloGetir("HOMEDEVICESWORD");
+            }
+            if (CmbKelimeKategori.SelectedItem.ToString() == "Sohbet, Kafe & Restoran")
+            {
+                TabloGetir("CHATCAFEWORD");
+            }
+            if (CmbKelimeKategori.SelectedItem.ToString() == "Karışık")
+            {
+                TabloGetir("MIXEDWORD");
+            }
+            if (CmbKelimeKategori.SelectedItem.ToString() == "Alışveriş")
+            {
+                TabloGetir("SHOPPINGWORD");
+            }
+            if (CmbKelimeKategori.SelectedItem.ToString() == "A1 Kelimeler")
+            {
+                TabloGetir("A1WORD");
+            }
+            if (CmbKelimeKategori.SelectedItem.ToString() == "A2 Kelimeler")
+            {
+                TabloGetir("A2LWORD");
+            }
+            if (CmbKelimeKategori.SelectedItem.ToString() == "B1 Kelimeler")
+            {
+                TabloGetir("B1WORD");
+            }
+
+        }
     }
 }

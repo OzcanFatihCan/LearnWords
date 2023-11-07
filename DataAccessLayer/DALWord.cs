@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.OleDb;
 using System.Linq;
+using System.Security;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -236,6 +237,36 @@ namespace DataAccessLayer
             catch (Exception)
             {
 
+                throw;
+            }
+        }
+
+        public static List<EntityWord> TabloKelimeGetir(string tabloAdi)
+        {
+           
+            try
+            {
+                List<EntityWord> KelimeTabloları = new List<EntityWord>();
+                string query = "SELECT EN,TR FROM " + tabloAdi;
+                OleDbCommand komut = new OleDbCommand(query, Baglanti.conn);
+                if (komut.Connection.State != ConnectionState.Open)
+                {
+                    komut.Connection.Open();
+                }
+                OleDbDataReader dr = komut.ExecuteReader();
+                while (dr.Read())
+                {
+                    EntityWord ent = new EntityWord();
+                    ent.En = dr["EN"].ToString().ToLower();
+                    ent.Tr = dr["TR"].ToString().ToLower();
+                 
+                    KelimeTabloları.Add(ent);
+                }
+                dr.Close();
+                return KelimeTabloları;
+            }
+            catch (Exception)
+            {
                 throw;
             }
         }
