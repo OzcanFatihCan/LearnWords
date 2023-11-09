@@ -306,8 +306,7 @@ namespace DataAccessLayer
                 int boyut=0;
                 List<EntityWord> boyutKontrol= TabloKelimeGetir("SHOPPINGWORD");
                 foreach (var item in boyutKontrol)
-                {
-                    Console.WriteLine(item.Tr);
+                {                   
                     boyut++;
                 }
                 Random rnd = new Random();

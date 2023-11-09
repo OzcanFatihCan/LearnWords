@@ -115,5 +115,17 @@ namespace LogicLayer
                 return null;
             }
         }
+
+        public static List<EntityWord> LLAlisverisKelime(int sayi)
+        {
+            if (!string.IsNullOrEmpty(sayi.ToString()))
+            {
+                return DALWord.AlisverisKelimeGetir(sayi);
+            }
+            else
+            {
+                return null;
+            }
+        }
     }
 }
