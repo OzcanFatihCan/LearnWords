@@ -16,8 +16,14 @@ namespace DataAccessLayer
         {   
             try
             {
+                int boyut = 0;
+                List<EntityWord> boyutKontrol = TabloKelimeGetir("JOBWORD");
+                foreach (var item in boyutKontrol)
+                {
+                    boyut++;
+                }
                 Random rnd = new Random();
-                int sayi = rnd.Next(1, 92);
+                int sayi = rnd.Next(1, boyut + 1);
 
                 List<EntityWord> Kelimeler = new List<EntityWord>();
                 OleDbCommand komut = new OleDbCommand("SELECT * FROM JOBWORD WHERE ID=@P1 and KATEGORI=@P2", Baglanti.conn);
@@ -49,8 +55,14 @@ namespace DataAccessLayer
         {
             try
             {
+                int boyut = 0;
+                List<EntityWord> boyutKontrol = TabloKelimeGetir("EMOTEFEELWORD");
+                foreach (var item in boyutKontrol)
+                {
+                    boyut++;
+                }
                 Random rnd = new Random();
-                int sayi = rnd.Next(1, 40);
+                int sayi = rnd.Next(1, boyut + 1);
 
                 List<EntityWord> Kelimeler = new List<EntityWord>();
                 OleDbCommand komut = new OleDbCommand("SELECT * FROM EMOTEFEELWORD WHERE ID=@P1 and KATEGORI=@P2", Baglanti.conn);
@@ -81,8 +93,14 @@ namespace DataAccessLayer
         {
             try
             {
+                int boyut = 0;
+                List<EntityWord> boyutKontrol = TabloKelimeGetir("TRAVELWORD");
+                foreach (var item in boyutKontrol)
+                {
+                    boyut++;
+                }
                 Random rnd = new Random();
-                int sayi = rnd.Next(1, 43);
+                int sayi = rnd.Next(1, boyut + 1);
 
                 List<EntityWord> Kelimeler = new List<EntityWord>();
                 OleDbCommand komut = new OleDbCommand("SELECT * FROM TRAVELWORD WHERE ID=@P1 and KATEGORI=@P2", Baglanti.conn);
@@ -114,8 +132,14 @@ namespace DataAccessLayer
         {
             try
             {
+                int boyut = 0;
+                List<EntityWord> boyutKontrol = TabloKelimeGetir("VERBWORD");
+                foreach (var item in boyutKontrol)
+                {
+                    boyut++;
+                }
                 Random rnd = new Random();
-                int sayi = rnd.Next(1, 52);
+                int sayi = rnd.Next(1, boyut + 1);
 
                 List<EntityWord> Kelimeler = new List<EntityWord>();
                 OleDbCommand komut = new OleDbCommand("SELECT * FROM VERBWORD WHERE ID=@P1 and KATEGORI=@P2", Baglanti.conn);
@@ -147,8 +171,14 @@ namespace DataAccessLayer
         {
             try
             {
+                int boyut = 0;
+                List<EntityWord> boyutKontrol = TabloKelimeGetir("ADJECTIVEWORD");
+                foreach (var item in boyutKontrol)
+                {
+                    boyut++;
+                }
                 Random rnd = new Random();
-                int sayi = rnd.Next(1, 51);
+                int sayi = rnd.Next(1, boyut + 1);
 
                 List<EntityWord> Kelimeler = new List<EntityWord>();
                 OleDbCommand komut = new OleDbCommand("SELECT * FROM ADJECTIVEWORD WHERE ID=@P1 and KATEGORI=@P2", Baglanti.conn);
@@ -179,8 +209,14 @@ namespace DataAccessLayer
         {
             try
             {
+                int boyut = 0;
+                List<EntityWord> boyutKontrol = TabloKelimeGetir("HOMEDEVICESWORD");
+                foreach (var item in boyutKontrol)
+                {
+                    boyut++;
+                }
                 Random rnd = new Random();
-                int sayi = rnd.Next(1, 31);
+                int sayi = rnd.Next(1, boyut + 1);
 
                 List<EntityWord> Kelimeler = new List<EntityWord>();
                 OleDbCommand komut = new OleDbCommand("SELECT * FROM HOMEDEVICESWORD WHERE ID=@P1 and KATEGORI=@P2", Baglanti.conn);
@@ -212,8 +248,14 @@ namespace DataAccessLayer
         {
             try
             {
+                int boyut = 0;
+                List<EntityWord> boyutKontrol = TabloKelimeGetir("CHATCAFEWORD");
+                foreach (var item in boyutKontrol)
+                {
+                    boyut++;
+                }
                 Random rnd = new Random();
-                int sayi = rnd.Next(1, 69);
+                int sayi = rnd.Next(1, boyut + 1);
 
                 List<EntityWord> Kelimeler = new List<EntityWord>();
                 OleDbCommand komut = new OleDbCommand("SELECT * FROM CHATCAFEWORD WHERE ID=@P1 and KATEGORI=@P2", Baglanti.conn);
