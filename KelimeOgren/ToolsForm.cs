@@ -17,6 +17,7 @@ namespace KelimeOgren
     public partial class ToolsForm : MaterialForm
     {
         string seciliTablo="";
+        int seciliKategori=0;
         public ToolsForm()
         {
             InitializeComponent();
@@ -110,6 +111,7 @@ namespace KelimeOgren
             {
                 foreach (var item in Tablolar)
                 {
+                    seciliKategori = item.Kategori;
                     dataGridView2.Rows.Add(item.En, item.Tr);
                 }
             }
@@ -195,6 +197,37 @@ namespace KelimeOgren
                 foreach (var item in KelimeLog)
                 {
                     dataGridView2.Rows.Add(item.En, item.Tr);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Önce kelime tablosunu seçiniz!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void BtnKelimeEkle_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(seciliTablo))
+            {
+                string tablo="";
+                //seçili tabloya ekleme yapılacak
+                EntityWord ent =new EntityWord();
+                ent.En=TxtEn.Text;
+                ent.Tr=TxtTr.Text;
+                ent.Kategori = seciliKategori;
+                tablo = seciliTablo;
+                int result=LogicWord.LLKelimeEkle(tablo, ent);
+                if (result>0)
+                {
+                    MessageBox.Show("Kelime başarıyla eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else if(result==0)
+                {
+                    MessageBox.Show("Kelime eklenirken bir hata oluştu", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    MessageBox.Show("Hücreleri boş bırakmayınız", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else

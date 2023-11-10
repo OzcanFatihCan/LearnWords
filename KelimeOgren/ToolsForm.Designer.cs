@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ToolsForm));
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -39,8 +39,6 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.Ingilizce = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Turkce = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.materialCard3 = new MaterialSkin.Controls.MaterialCard();
             this.materialCard2 = new MaterialSkin.Controls.MaterialCard();
             this.CmbKelimeKategori = new System.Windows.Forms.ComboBox();
@@ -48,13 +46,15 @@
             this.TxtKelimeAra = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TxtEn = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.TxtTr = new System.Windows.Forms.TextBox();
+            this.BtnKelimeEkle = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Ingilizce = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Turkce = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -97,35 +97,35 @@
             // dataGridView1
             // 
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(3, 3);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.Size = new System.Drawing.Size(1065, 612);
             this.dataGridView1.TabIndex = 0;
@@ -160,7 +160,7 @@
             this.materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard1.Name = "materialCard1";
             this.materialCard1.Padding = new System.Windows.Forms.Padding(14);
-            this.materialCard1.Size = new System.Drawing.Size(636, 486);
+            this.materialCard1.Size = new System.Drawing.Size(636, 522);
             this.materialCard1.TabIndex = 7;
             // 
             // dataGridView2
@@ -175,20 +175,8 @@
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
             this.dataGridView2.RowHeadersVisible = false;
-            this.dataGridView2.Size = new System.Drawing.Size(608, 458);
+            this.dataGridView2.Size = new System.Drawing.Size(608, 494);
             this.dataGridView2.TabIndex = 0;
-            // 
-            // Ingilizce
-            // 
-            this.Ingilizce.HeaderText = "İngilizce";
-            this.Ingilizce.Name = "Ingilizce";
-            this.Ingilizce.ReadOnly = true;
-            // 
-            // Turkce
-            // 
-            this.Turkce.HeaderText = "Türkçe";
-            this.Turkce.Name = "Turkce";
-            this.Turkce.ReadOnly = true;
             // 
             // materialCard3
             // 
@@ -197,12 +185,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.materialCard3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.materialCard3.Controls.Add(this.pictureBox1);
-            this.materialCard3.Controls.Add(this.button1);
+            this.materialCard3.Controls.Add(this.BtnKelimeEkle);
             this.materialCard3.Controls.Add(this.label5);
-            this.materialCard3.Controls.Add(this.textBox2);
+            this.materialCard3.Controls.Add(this.TxtTr);
             this.materialCard3.Controls.Add(this.label4);
             this.materialCard3.Controls.Add(this.label3);
-            this.materialCard3.Controls.Add(this.textBox1);
+            this.materialCard3.Controls.Add(this.TxtEn);
             this.materialCard3.Cursor = System.Windows.Forms.Cursors.Default;
             this.materialCard3.Depth = 0;
             this.materialCard3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -212,7 +200,7 @@
             this.materialCard3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard3.Name = "materialCard3";
             this.materialCard3.Padding = new System.Windows.Forms.Padding(14);
-            this.materialCard3.Size = new System.Drawing.Size(373, 551);
+            this.materialCard3.Size = new System.Drawing.Size(389, 587);
             this.materialCard3.TabIndex = 6;
             // 
             // materialCard2
@@ -288,18 +276,18 @@
             this.ımageList1.Images.SetKeyName(0, "stat2.png");
             this.ımageList1.Images.SetKeyName(1, "Word.png");
             // 
-            // textBox1
+            // TxtEn
             // 
-            this.textBox1.Location = new System.Drawing.Point(73, 255);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(227, 26);
-            this.textBox1.TabIndex = 0;
+            this.TxtEn.Location = new System.Drawing.Point(65, 281);
+            this.TxtEn.Name = "TxtEn";
+            this.TxtEn.Size = new System.Drawing.Size(227, 26);
+            this.TxtEn.TabIndex = 0;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(98, 104);
+            this.label3.Location = new System.Drawing.Point(90, 130);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(176, 29);
             this.label3.TabIndex = 1;
@@ -308,7 +296,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(150, 233);
+            this.label4.Location = new System.Drawing.Point(142, 259);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(72, 19);
             this.label4.TabIndex = 2;
@@ -317,37 +305,53 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(155, 336);
+            this.label5.Location = new System.Drawing.Point(147, 362);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(62, 19);
             this.label5.TabIndex = 4;
             this.label5.Text = "Türkçe";
             // 
-            // textBox2
+            // TxtTr
             // 
-            this.textBox2.Location = new System.Drawing.Point(73, 358);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(227, 26);
-            this.textBox2.TabIndex = 3;
+            this.TxtTr.Location = new System.Drawing.Point(65, 384);
+            this.TxtTr.Name = "TxtTr";
+            this.TxtTr.Size = new System.Drawing.Size(227, 26);
+            this.TxtTr.TabIndex = 3;
             // 
-            // button1
+            // BtnKelimeEkle
             // 
-            this.button1.Location = new System.Drawing.Point(112, 428);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(149, 43);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "EKLE";
-            this.button1.UseVisualStyleBackColor = true;
+            this.BtnKelimeEkle.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnKelimeEkle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnKelimeEkle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(54)))), ((int)(((byte)(90)))));
+            this.BtnKelimeEkle.Location = new System.Drawing.Point(104, 454);
+            this.BtnKelimeEkle.Name = "BtnKelimeEkle";
+            this.BtnKelimeEkle.Size = new System.Drawing.Size(149, 43);
+            this.BtnKelimeEkle.TabIndex = 5;
+            this.BtnKelimeEkle.Text = "EKLE";
+            this.BtnKelimeEkle.UseVisualStyleBackColor = true;
+            this.BtnKelimeEkle.Click += new System.EventHandler(this.BtnKelimeEkle_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(161, 41);
+            this.pictureBox1.Location = new System.Drawing.Point(153, 67);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(51, 50);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
+            // 
+            // Ingilizce
+            // 
+            this.Ingilizce.HeaderText = "İngilizce";
+            this.Ingilizce.Name = "Ingilizce";
+            this.Ingilizce.ReadOnly = true;
+            // 
+            // Turkce
+            // 
+            this.Turkce.HeaderText = "Türkçe";
+            this.Turkce.Name = "Turkce";
+            this.Turkce.ReadOnly = true;
             // 
             // ToolsForm
             // 
@@ -402,14 +406,14 @@
         private MaterialSkin.Controls.MaterialCard materialCard2;
         private MaterialSkin.Controls.MaterialCard materialCard1;
         private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Ingilizce;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Turkce;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TxtEn;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox TxtTr;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnKelimeEkle;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ingilizce;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Turkce;
     }
 }

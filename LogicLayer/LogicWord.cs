@@ -127,5 +127,20 @@ namespace LogicLayer
                 return null;
             }
         }
+
+        public static int LLKelimeEkle(string tabloAdi, EntityWord ent)
+        {
+            if (!string.IsNullOrEmpty(tabloAdi) &&
+                !string.IsNullOrEmpty(ent.En)&&
+                !string.IsNullOrEmpty(ent.Tr)&&
+                !string.IsNullOrEmpty(ent.Kategori.ToString()))
+            {
+                return DALWord.KelimeEkle(tabloAdi,ent);
+            }
+            else
+            {
+                return -1;
+            }
+        }
     }
 }
