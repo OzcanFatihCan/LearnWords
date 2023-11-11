@@ -114,6 +114,17 @@ namespace KelimeOgren
                 }
                 return;
             }
+            if (kategori == 10)
+            {
+                List<EntityWord> Kelimeler = LogicWord.LLA1Kelime(kategori);
+                foreach (var item in Kelimeler)
+                {
+                    TxtEN.Text = item.En;
+                    cevap = item.Tr;
+                    label4.Text = "Kategori: A1 Kelimeler";
+                }
+                return;
+            }
             else
             {
                 MessageBox.Show("Hazırlık aşamasındayız", "Yükleniyor...", MessageBoxButtons.OK, MessageBoxIcon.Information);

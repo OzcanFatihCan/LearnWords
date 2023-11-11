@@ -142,5 +142,16 @@ namespace LogicLayer
                 return -1;
             }
         }
+        public static List<EntityWord> LLA1Kelime(int sayi)
+        {
+            if (!string.IsNullOrEmpty(sayi.ToString()))
+            {
+                return DALWord.A1KelimeGetir(sayi);
+            }
+            else
+            {
+                return null;
+            }
+        }
     }
 }
