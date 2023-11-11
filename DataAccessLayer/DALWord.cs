@@ -17,12 +17,9 @@ namespace DataAccessLayer
         {   
             try
             {
-                int boyut = 0;
+                
                 List<EntityWord> boyutKontrol = TabloKelimeGetir("JOBWORD");
-                foreach (var item in boyutKontrol)
-                {
-                    boyut++;
-                }
+                int boyut = boyutKontrol.Count();
                 Random rnd = new Random();
                 int sayi = rnd.Next(1, boyut + 1);
 
@@ -43,6 +40,7 @@ namespace DataAccessLayer
                     Kelimeler.Add(ent);
                 }
                 dr.Close();
+                komut.Connection.Close();
                 return Kelimeler;
             }
             catch (Exception)
@@ -56,12 +54,8 @@ namespace DataAccessLayer
         {
             try
             {
-                int boyut = 0;
                 List<EntityWord> boyutKontrol = TabloKelimeGetir("EMOTEFEELWORD");
-                foreach (var item in boyutKontrol)
-                {
-                    boyut++;
-                }
+                int boyut = boyutKontrol.Count();
                 Random rnd = new Random();
                 int sayi = rnd.Next(1, boyut + 1);
 
@@ -82,6 +76,7 @@ namespace DataAccessLayer
                     Kelimeler.Add(ent);
                 }
                 dr.Close();
+                komut.Connection.Close();
                 return Kelimeler;
             }
             catch (Exception)
@@ -94,12 +89,9 @@ namespace DataAccessLayer
         {
             try
             {
-                int boyut = 0;
+                
                 List<EntityWord> boyutKontrol = TabloKelimeGetir("TRAVELWORD");
-                foreach (var item in boyutKontrol)
-                {
-                    boyut++;
-                }
+                int boyut = boyutKontrol.Count();
                 Random rnd = new Random();
                 int sayi = rnd.Next(1, boyut + 1);
 
@@ -120,6 +112,7 @@ namespace DataAccessLayer
                     Kelimeler.Add(ent);
                 }
                 dr.Close();
+                komut.Connection.Close();
                 return Kelimeler;
             }
             catch (Exception)
@@ -133,12 +126,9 @@ namespace DataAccessLayer
         {
             try
             {
-                int boyut = 0;
+                
                 List<EntityWord> boyutKontrol = TabloKelimeGetir("VERBWORD");
-                foreach (var item in boyutKontrol)
-                {
-                    boyut++;
-                }
+                int boyut = boyutKontrol.Count();
                 Random rnd = new Random();
                 int sayi = rnd.Next(1, boyut + 1);
 
@@ -159,6 +149,7 @@ namespace DataAccessLayer
                     Kelimeler.Add(ent);
                 }
                 dr.Close();
+                komut.Connection.Close();
                 return Kelimeler;
             }
             catch (Exception)
@@ -172,12 +163,8 @@ namespace DataAccessLayer
         {
             try
             {
-                int boyut = 0;
                 List<EntityWord> boyutKontrol = TabloKelimeGetir("ADJECTIVEWORD");
-                foreach (var item in boyutKontrol)
-                {
-                    boyut++;
-                }
+                int boyut = boyutKontrol.Count();
                 Random rnd = new Random();
                 int sayi = rnd.Next(1, boyut + 1);
 
@@ -198,6 +185,7 @@ namespace DataAccessLayer
                     Kelimeler.Add(ent);
                 }
                 dr.Close();
+                komut.Connection.Close();
                 return Kelimeler;
             }
             catch (Exception)
@@ -210,12 +198,9 @@ namespace DataAccessLayer
         {
             try
             {
-                int boyut = 0;
+                
                 List<EntityWord> boyutKontrol = TabloKelimeGetir("HOMEDEVICESWORD");
-                foreach (var item in boyutKontrol)
-                {
-                    boyut++;
-                }
+                int boyut = boyutKontrol.Count();
                 Random rnd = new Random();
                 int sayi = rnd.Next(1, boyut + 1);
 
@@ -236,6 +221,7 @@ namespace DataAccessLayer
                     Kelimeler.Add(ent);
                 }
                 dr.Close();
+                komut.Connection.Close();
                 return Kelimeler;
             }
             catch (Exception)
@@ -249,12 +235,9 @@ namespace DataAccessLayer
         {
             try
             {
-                int boyut = 0;
+                
                 List<EntityWord> boyutKontrol = TabloKelimeGetir("CHATCAFEWORD");
-                foreach (var item in boyutKontrol)
-                {
-                    boyut++;
-                }
+                int boyut = boyutKontrol.Count();
                 Random rnd = new Random();
                 int sayi = rnd.Next(1, boyut + 1);
 
@@ -275,6 +258,7 @@ namespace DataAccessLayer
                     Kelimeler.Add(ent);
                 }
                 dr.Close();
+                komut.Connection.Close();
                 return Kelimeler;
             }
             catch (Exception)
@@ -306,6 +290,7 @@ namespace DataAccessLayer
                     KelimeTabloları.Add(ent);
                 }
                 dr.Close();
+                komut.Connection.Close();
                 return KelimeTabloları;
             }
             catch (Exception)
@@ -334,6 +319,7 @@ namespace DataAccessLayer
 
                     KelimeLog.Add(ent);
                 }
+                komut.Connection.Close();
                 return KelimeLog;
             }
             catch (Exception)
@@ -348,12 +334,9 @@ namespace DataAccessLayer
         {
             try
             {
-                int boyut=0;
+               
                 List<EntityWord> boyutKontrol= TabloKelimeGetir("SHOPPINGWORD");
-                foreach (var item in boyutKontrol)
-                {                   
-                    boyut++;
-                }
+                int boyut = boyutKontrol.Count();
                 Random rnd = new Random();
                 int sayi = rnd.Next(1, boyut+1);
 
@@ -374,6 +357,7 @@ namespace DataAccessLayer
                     Kelimeler.Add(ent);
                 }
                 dr.Close();
+                komut.Connection.Close();
                 return Kelimeler;
             }
             catch (Exception)
@@ -396,8 +380,9 @@ namespace DataAccessLayer
                 komut.Parameters.AddWithValue("@P1", ent.En);
                 komut.Parameters.AddWithValue("@P2", ent.Tr);
                 komut.Parameters.AddWithValue("@P3", ent.Kategori);
-
-                return komut.ExecuteNonQuery();
+                int result = komut.ExecuteNonQuery();
+                komut.Connection.Close();
+                return result;
             }
             catch (Exception)
             {
@@ -432,11 +417,11 @@ namespace DataAccessLayer
                     Kelimeler.Add(ent);
                 }
                 dr.Close();
+                komut.Connection.Close();
                 return Kelimeler;
             }
             catch (Exception)
             {
-
                 throw;
             }
         }

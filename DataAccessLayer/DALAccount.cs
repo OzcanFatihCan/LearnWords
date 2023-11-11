@@ -21,8 +21,9 @@ namespace DataAccessLayer
             komut.Parameters.AddWithValue("@P1",ent.Ad);
             komut.Parameters.AddWithValue("@P2", ent.Dogru);
             komut.Parameters.AddWithValue("@P3", ent.Kategori);
-            
-            return komut.ExecuteNonQuery();
+            int result= komut.ExecuteNonQuery();
+            komut.Connection.Close();
+            return result;
         }
         
         public static List<EntityAccount> StatGetir()
@@ -43,6 +44,7 @@ namespace DataAccessLayer
                 Stat.Add(ent);
             }
             dr.Close();
+            komut2.Connection.Close();
             return Stat;
         }
     }
