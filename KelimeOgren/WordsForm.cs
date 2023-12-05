@@ -125,6 +125,28 @@ namespace KelimeOgren
                 }
                 return;
             }
+            if (kategori == 11)
+            {
+                List<EntityWord> Kelimeler = LogicWord.LLA2Kelime(kategori);
+                foreach (var item in Kelimeler)
+                {
+                    TxtEN.Text = item.En;
+                    cevap = item.Tr;
+                    label4.Text = "Kategori: A2 Kelimeler";
+                }
+                return;
+            }
+            if (kategori == 12)
+            {
+                List<EntityWord> Kelimeler = LogicWord.LLB1Kelime(kategori);
+                foreach (var item in Kelimeler)
+                {
+                    TxtEN.Text = item.En;
+                    cevap = item.Tr;
+                    label4.Text = "Kategori: B1 Kelimeler";
+                }
+                return;
+            }
             else
             {
                 MessageBox.Show("Hazırlık aşamasındayız", "Yükleniyor...", MessageBoxButtons.OK, MessageBoxIcon.Information);

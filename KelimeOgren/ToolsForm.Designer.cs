@@ -78,7 +78,7 @@
             this.materialTabControl1.Multiline = true;
             this.materialTabControl1.Name = "materialTabControl1";
             this.materialTabControl1.SelectedIndex = 0;
-            this.materialTabControl1.Size = new System.Drawing.Size(1095, 700);
+            this.materialTabControl1.Size = new System.Drawing.Size(1111, 739);
             this.materialTabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -90,7 +90,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 39);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1087, 657);
+            this.tabPage1.Size = new System.Drawing.Size(1103, 696);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "İstatistikler";
             // 
@@ -127,7 +127,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.Size = new System.Drawing.Size(1081, 651);
+            this.dataGridView1.Size = new System.Drawing.Size(1097, 690);
             this.dataGridView1.TabIndex = 0;
             // 
             // tabPage2
@@ -358,7 +358,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1098, 767);
+            this.ClientSize = new System.Drawing.Size(1114, 806);
             this.Controls.Add(this.materialTabControl1);
             this.DrawerAutoShow = true;
             this.DrawerShowIconsWhenHidden = true;

@@ -153,5 +153,27 @@ namespace LogicLayer
                 return null;
             }
         }
+        public static List<EntityWord> LLA2Kelime(int sayi)
+        {
+            if (!string.IsNullOrEmpty(sayi.ToString()))
+            {
+                return DALWord.A2KelimeGetir(sayi);
+            }
+            else
+            {
+                return null;
+            }
+        }
+        public static List<EntityWord> LLB1Kelime(int sayi)
+        {
+            if (!string.IsNullOrEmpty(sayi.ToString()))
+            {
+                return DALWord.B1KelimeGetir(sayi);
+            }
+            else
+            {
+                return null;
+            }
+        }
     }
 }

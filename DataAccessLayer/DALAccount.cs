@@ -34,7 +34,7 @@ namespace DataAccessLayer
             {
                 komut2.Connection.Open();
             }
-            OleDbDataReader dr = komut2.ExecuteReader();
+            OleDbDataReader dr = komut2.ExecuteReader();         
             while (dr.Read())
             {
                 EntityAccount ent = new EntityAccount();

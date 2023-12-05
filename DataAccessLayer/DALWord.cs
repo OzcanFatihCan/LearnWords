@@ -425,5 +425,76 @@ namespace DataAccessLayer
                 throw;
             }
         }
+
+        public static List<EntityWord> A2KelimeGetir(int kategori)
+        {
+            try
+            {
+
+                List<EntityWord> boyutKontrol = TabloKelimeGetir("A2WORD");
+                int boyut = boyutKontrol.Count();
+                Random rnd = new Random();
+                int sayi = rnd.Next(1, boyut + 1);
+
+                List<EntityWord> Kelimeler = new List<EntityWord>();
+                OleDbCommand komut = new OleDbCommand("SELECT * FROM A2WORD WHERE ID=@P1 and KATEGORI=@P2", Baglanti.conn);
+                if (komut.Connection.State != ConnectionState.Open)
+                {
+                    komut.Connection.Open();
+                }
+                komut.Parameters.AddWithValue("@P1", sayi);
+                komut.Parameters.AddWithValue("@P2", kategori);
+                OleDbDataReader dr = komut.ExecuteReader();
+                while (dr.Read())
+                {
+                    EntityWord ent = new EntityWord();
+                    ent.En = dr["EN"].ToString().ToLower();
+                    ent.Tr = dr["TR"].ToString().ToLower();
+                    Kelimeler.Add(ent);
+                }
+                dr.Close();
+                komut.Connection.Close();
+                return Kelimeler;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+        public static List<EntityWord> B1KelimeGetir(int kategori)
+        {
+            try
+            {
+
+                List<EntityWord> boyutKontrol = TabloKelimeGetir("B1WORD");
+                int boyut = boyutKontrol.Count();
+                Random rnd = new Random();
+                int sayi = rnd.Next(1, boyut + 1);
+
+                List<EntityWord> Kelimeler = new List<EntityWord>();
+                OleDbCommand komut = new OleDbCommand("SELECT * FROM B1WORD WHERE ID=@P1 and KATEGORI=@P2", Baglanti.conn);
+                if (komut.Connection.State != ConnectionState.Open)
+                {
+                    komut.Connection.Open();
+                }
+                komut.Parameters.AddWithValue("@P1", sayi);
+                komut.Parameters.AddWithValue("@P2", kategori);
+                OleDbDataReader dr = komut.ExecuteReader();
+                while (dr.Read())
+                {
+                    EntityWord ent = new EntityWord();
+                    ent.En = dr["EN"].ToString().ToLower();
+                    ent.Tr = dr["TR"].ToString().ToLower();
+                    Kelimeler.Add(ent);
+                }
+                dr.Close();
+                komut.Connection.Close();
+                return Kelimeler;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
     }
 }
